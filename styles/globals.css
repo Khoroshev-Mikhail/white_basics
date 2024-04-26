@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    height: 100%;
+    min-width: 320px !important;
+}
+._section {
+    @apply w-full
+}
+._wrapper {
+    @apply px-5 max-w-[1480px] mx-auto
+}
+._h2{
+    @apply text-[46px] xs:text-[54px] sm:text-[62px] md:text-[70px] lg:text-[78px] xl:text-[86px] 2xl:text-[96px]
+}
+._text_14_18{
+    @apply text-[14px] sm:text-[16px] md:text-[18px]
+}
+._text_18_30{
+    @apply text-[18px] xs:text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] 2xl:text-[30px]
+}
+._text_20_30{
+    @apply text-[20px] xs:text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] 2xl:text-[30px]
+}
+._text_12_20{
+    @apply text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px]
+}
