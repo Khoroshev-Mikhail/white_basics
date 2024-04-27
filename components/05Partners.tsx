@@ -19,22 +19,22 @@ export default function Partners(){
                 </div>
                 <div className="mt-5 md:mt-[30px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 md:gap-5">
                     <div className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_1} alt=""/>
+                        <Image className='w-2/3 mx-auto' src={partner_1} alt="Raydium"/>
                     </div>
                     <div className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_2} alt=""/>
+                        <Image className='w-2/3 mx-auto' src={partner_2} alt="PinkSale"/>
                     </div>
                     <div className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_3} alt=""/>
+                        <Image className='w-2/3 mx-auto' src={partner_3} alt="InterFi"/>
                     </div>
                     <div className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_4} alt=""/>
+                        <Image className='w-2/3 mx-auto' src={partner_4} alt="Solana"/>
                     </div>
                     <div className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_5} alt=""/>
+                        <Image className='w-2/3 mx-auto' src={partner_5} alt="CoinMarketCap"/>
                     </div>
                     <div className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_6} alt=""/>
+                        <Image className='w-2/3 mx-auto' src={partner_6} alt="CoinGeko"/>
                     </div>
                 </div>
 

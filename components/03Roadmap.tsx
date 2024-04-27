@@ -1,13 +1,14 @@
 import Image from "next/image";
 import clock from "../public/img/03Roadmap/clock.gif"
 import dollar from "../public/img/03Roadmap/dollar.gif"
+import dollar_placeholder from "../public/img/03Roadmap/placeholder-dollar.gif"
 import top from "../public/img/03Roadmap/top.gif"
 
 export default function Roadmap(){
     return(
         <section id="Roadmap" className="_section">
             <div className="_wrapper">
-                <h2 className="_h2 ">
+                <h2 className="_h2 mt-[30px] md:mt-[60px]">
                     Roadmap
                 </h2>
                 <div className="mt-[30px] lg:mt-[10px] grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[10px]">
@@ -22,7 +23,7 @@ export default function Roadmap(){
                             Collect 21000 SOL on Pinksale Fairlaunch to provide stable growth after DEX launch.  
                         </div>
                     </div>
-                    <div className="lg:order-3 aspect-[730/430] bg-black rounded-[10px]">
+                    <div className="lg:order-3 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
                         <Image className="w-full h-full rounded-[10px]" src={clock} alt=""/>
                     </div>
                     <div className="lg:order-2">
@@ -51,10 +52,10 @@ export default function Roadmap(){
                             Within 6 months White Basics coin reaches 1$, and our team starts to develop the safest, fastest, and cheapest Blockchain. White Basics Chain will take over the Blockchain World. 
                         </div>
                     </div>
-                    <div className="lg:order-7 aspect-[730/430] bg-black rounded-[10px]">
-                        <Image className="w-full h-full rounded-[10px]" src={dollar} alt=""/>
+                    <div className="lg:order-7 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
+                        <Image placeholder="blur" blurDataURL={dollar_placeholder.src} className="w-full h-full rounded-[10px] " src={dollar} alt=""/>
                     </div>
-
+                    {/* object-contain */}
                     <div className="lg:order-6">
                         <div className="mt-[30px] lg:mt-[40px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
                             Phase 4
@@ -66,8 +67,8 @@ export default function Roadmap(){
                             White Basics reaches the TOP 2 Coinmarketcap <br className="hidden lg:inline" />with $441 Billion Marketcap.   
                         </div>
                     </div>
-                    <div className="lg:order-8 aspect-[730/430] bg-black rounded-[10px]">
-                        <Image className="w-full h-full rounded-[10px]" src={top} alt=""/>
+                    <div className="lg:order-8 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
+                        <Image placeholder="blur" blurDataURL={dollar_placeholder.src} className="w-full h-full rounded-[10px]" src={top} alt=""/>
                     </div>
                 </div>
             </div>

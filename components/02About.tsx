@@ -1,6 +1,6 @@
 export default function About(){
     return(
-        <section id="About" className="_section py-[28%] xs:py-[25%] sm:py-[20%] md:py-[14%] bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.png')] md:bg-[url('/img/02About/bg.png')]">
+        <section id="About" className="_section py-[28%] xs:py-[25%] sm:py-[20%] md:py-[14%] bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.png')] md:bg-[url('/img/02About/bg.png')] bg-[#F9F9F9]">
             <div className="_wrapper">
                 <div className="flex flex-col mx-auto md:w-2/3 lg:w-1/2 [&>div]:text-center tracking-tight leading-tight">
                     <h2 className="_h2 text-center">
