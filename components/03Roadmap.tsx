@@ -6,9 +6,9 @@ import top from "../public/img/03Roadmap/top.gif"
 
 export default function Roadmap(){
     return(
-        <section id="Roadmap" className="_section">
+        <section id="Roadmap" className="_section pt-[30px] md:pt-[60px]">
             <div className="_wrapper">
-                <h2 className="_h2 mt-[30px] md:mt-[60px]">
+                <h2 className="_h2">
                     Roadmap
                 </h2>
                 <div className="mt-[30px] lg:mt-[10px] grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[10px]">
@@ -68,7 +68,7 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="lg:order-8 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
-                        <Image placeholder="blur" blurDataURL={dollar_placeholder.src} className="w-full h-full rounded-[10px]" src={top} alt=""/>
+                        <Image className="w-full h-full rounded-[10px]" src={top} alt=""/>
                     </div>
                 </div>
             </div>
