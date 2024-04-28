@@ -26,7 +26,7 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="lg:order-3 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
-                        <video className="w-full h-full rounded-[10px]" autoPlay muted playsInline poster="/img/03Roadmap/clock_poster.webp">
+                        <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster="/img/03Roadmap/clock_poster.webp">
                             <source src="/img/03Roadmap/clock.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -42,7 +42,7 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="lg:order-4 aspect-[730/430] bg-black rounded-[10px]">
-                        <video className="w-full h-full rounded-[10px]" autoPlay muted playsInline poster="/img/03Roadmap/phase2_poster.webp">
+                        <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster="/img/03Roadmap/phase2_poster.webp">
                             <source src="/img/03Roadmap/phase2.MP4" type="video/mp4" />
                         </video>
                     </div>
@@ -60,7 +60,7 @@ export default function Roadmap(){
                     </div>
                     <div className="lg:order-7 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
                         {/* <Image placeholder="blur" blurDataURL={dollar_placeholder.src} className="w-full h-full rounded-[10px] " src={dollar} alt=""/> */}
-                        <video className="w-full h-full rounded-[10px]" autoPlay muted playsInline poster="/img/03Roadmap/dollar_poster.webp">
+                        <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster="/img/03Roadmap/dollar_poster.webp">
                             <source src="/img/03Roadmap/dollar.mp4" type="video/mp4" />
                         </video>
                     </div>

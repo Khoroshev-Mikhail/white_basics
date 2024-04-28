@@ -65,7 +65,7 @@ export default function Header(){
                 </div>
 
                 <div className="w-full h-full">
-                    <video autoPlay muted playsInline  className="block mx-auto w-auto h-auto">
+                    <video autoPlay muted playsInline className="block mx-auto w-full md:w-auto h-auto">
                     {/* poster="/img/01Header/loading.gif" */}
                         <source src="/img/01Header/main.MP4" type="video/mp4"/>
                     </video>
