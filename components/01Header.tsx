@@ -46,14 +46,14 @@ export default function Header(){
                 </div>
 
                 <div className="w-auto h-auto">
-                    <video autoPlay muted playsInline preload="auto" poster="/img/01Header/poster.webp" className="block mx-auto w-full h-full">
+                    <video autoPlay muted playsInline poster="/img/01Header/poster.webp" className="block mx-auto w-full h-full">
                         <source src="/img/01Header/main.mp4" type="video/mp4"/>
                     </video>
-                    {showButton &&
-                        <div className="absolute w-full flex justify-center bottom-[10%] md:bottom-[5%] opacity-100 transition-opacity duration-1000">
+                    {/* {showButton && */}
+                        <div className="absolute w-full flex justify-center bottom-[10%] md:bottom-[5%] opacity-50 transition-opacity duration-5000">
                             <a className="block mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] uppercase rounded-[100px] bg-[#FFFFFF] text-[16px] md:text-[18px] text-[#303030]">Buy</a>
                         </div>
-                    }
+                    {/* } */}
 
                 </div>
             </div>
