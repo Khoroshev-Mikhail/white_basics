@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import Social from "./00Social";
 
 export default function Header(){
-    const [ isHidden, setIsHidden ] = useState(true)
-    запретить скролл при isHidden true
+    const [ isHidden, setIsHidden ] = useState(true);
+    // запретить скролл при isHidden true
     const [showButton, setShowButton] = useState<boolean>(false);
     useEffect(() => {
         const video = document.querySelector("video");
