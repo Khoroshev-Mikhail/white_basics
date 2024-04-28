@@ -3,7 +3,7 @@ import { useParallax } from 'react-scroll-parallax';
 export default function About(){
     const { ref: bg } = useParallax<HTMLDivElement>({ 
         translateY: [0, -30], 
-        easing: [0, 0, 1, 0.6],
+        easing: [0, 0, 1, 0.1],
     });
     const { ref: text  } = useParallax<HTMLDivElement>({ 
         opacity: [1, 0], // Начальное значение прозрачности: 0 (полностью прозрачный), конечное значение: 1 (полностью непрозрачный)
@@ -11,10 +11,8 @@ export default function About(){
     });
     return(
         
-        <section  id="About" className="relative _section py-[28%] xs:py-[25%] sm:py-[20%] md:py-[14%]">
-            <div ref={bg}  className="absolute top-0 left-0 z-20 w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.webp')] md:bg-[url('/img/02About/bg.webp')] ">
-
-            </div>
+        <section  id="About" className="relative min-h-screen  _section py-[28%] xs:py-[25%] sm:py-[20%] md:py-[14%] flex flex-col justify-center">
+            <div ref={bg}  className="absolute top-0 left-0 z-20 w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.webp')] md:bg-[url('/img/02About/bg.webp')] "></div>
             
             <div ref={text} className="_wrapper relative z-30">
                 <div className="flex flex-col mx-auto md:w-2/3 lg:w-1/2 [&>div]:text-center tracking-tight leading-tight">
@@ -27,7 +25,7 @@ export default function About(){
                         <br />
                         It is your figment of imagination that completes the White Basics’ concept.
                     </div>
-                    <div className="_text_18_30 mt-[12.5%] xs:mt-[10%] md:mt-[7%]">
+                    <div className="_text_18_30 font-bold mt-[12.5%] xs:mt-[10%] md:mt-[7%]">
                         This way we are uniting each and every coin that has ever been or will be created.
                     </div>
                 </div>
