@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import partner_1 from "../public/img/05Partners/1.png"
-import partner_2 from "../public/img/05Partners/2.png"
-import partner_3 from "../public/img/05Partners/3.png"
-import partner_4 from "../public/img/05Partners/4.png"
-import partner_5 from "../public/img/05Partners/5.png"
-import partner_6 from "../public/img/05Partners/6.png"
+import partner_1 from "../public/img/05Partners/1.webp"
+import partner_2 from "../public/img/05Partners/2.webp"
+import partner_3 from "../public/img/05Partners/3.webp"
+import partner_4 from "../public/img/05Partners/4.webp"
+import partner_5 from "../public/img/05Partners/5.webp"
+import partner_6 from "../public/img/05Partners/6.webp"
 import Social from './00Social'
 
 export default function Partners(){

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import tokenomics from "../public/img/04Tokenomics/diagram.png"
-import tokenomics_mobile from "../public/img/04Tokenomics/diagram_mobile.png"
+import tokenomics from "../public/img/04Tokenomics/diagram.webp"
+import tokenomics_mobile from "../public/img/04Tokenomics/diagram_mobile.webp"
 
 export default function Tokenomics(){
     return(

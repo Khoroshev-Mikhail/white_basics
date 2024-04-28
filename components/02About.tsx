@@ -12,7 +12,7 @@ export default function About(){
     return(
         
         <section  id="About" className="relative _section py-[28%] xs:py-[25%] sm:py-[20%] md:py-[14%]">
-            <div ref={bg}  className="absolute top-0 left-0 z-20 w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.png')] md:bg-[url('/img/02About/bg.png')] ">
+            <div ref={bg}  className="absolute top-0 left-0 z-20 w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.webp')] md:bg-[url('/img/02About/bg.webp')] ">
 
             </div>
             
@@ -22,10 +22,10 @@ export default function About(){
                         About
                     </h2>
                     <div className=" mt-5 md:mt-7.5 _text_14_18">
-                        White Basics is a unique opportunity to have multiple coins in your crypto wallet by having only one coin. Use our white sheet of paper to visualize your favorite pet, artist, politician, or draw your own logo on it. 
+                    White Basics is a unique opportunity to have multiple coins in your crypto wallet by having only one coin. Use our white sheet of paper to visualize your favorite pet, artist, politician, or draw your own logo on it.
                         <br />
                         <br />
-                        It is your figment of imagination that completes White Basics’ concept.
+                        It is your figment of imagination that completes the White Basics’ concept.
                     </div>
                     <div className="_text_18_30 mt-[12.5%] xs:mt-[10%] md:mt-[7%]">
                         This way we are uniting each and every coin that has ever been or will be created.
