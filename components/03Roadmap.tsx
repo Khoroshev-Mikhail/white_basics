@@ -43,7 +43,9 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="lg:order-4 aspect-[730/430] bg-black rounded-[10px]">
-
+                        <video className="w-full h-full rounded-[10px]" autoPlay muted playsInline poster="/img/03Roadmap/phase2_poster.webp">
+                            <source src="/img/03Roadmap/phase2.mp4" type="video/mp4" />
+                        </video>
                     </div>
 
                     <div className="lg:order-5">
