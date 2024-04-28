@@ -1,10 +1,12 @@
 import Image from "next/image"
 import burger from "../public/img/01Header/burger.svg"
+import cross from "../public/img/01Header/cross.svg"
 import { useEffect, useRef, useState } from "react";
 import Social from "./00Social";
 
 export default function Header(){
-    const [isVisible, setIsVisible] = useState<boolean>(true);
+    const [ isHidden, setIsHidden ] = useState(true)
+    запретить скролл при isHidden true
     const [showButton, setShowButton] = useState<boolean>(false);
     useEffect(() => {
         const video = document.querySelector("video");
@@ -28,10 +30,24 @@ export default function Header(){
         }
     }, []);
     return(
-        <section id="Header" className="_section relative z-50 min-h-screen bg-black overflow-hidden ">
-            {/* {isLoading && <div className="fixed top-0 left-0 z-50 w-full h-full min-h-screen bg-red-600"></div>} */}
+        <section id="Header" className="_section relative z-50 min-h-screen max-h-screen bg-black overflow-hidden ">
             <div className="relative w-full h-full min-h-screen max-h-screen flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px]">
-                {/* <Image className="block mx-auto" src={main} alt="White Basics" /> */}
+
+            <div className={`${isHidden ? 'hidden' : 'block'} md:!hidden fixed z-50 top-0 left-0 w-full min-h-screen max-h-screen bg-white flex flex-col justify-center`}>
+            <Image className="fixed top-[1%] md:top-[1%] right-4 cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
+                <div className="relative py-10 sm:py-10 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
+                    
+                    <menu className={`uppercase block md:w-1/2 w-full relative z-50 text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] mt-10 text-black`}>
+                        <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#About">About</a></li>
+                        <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#Tokenomics">Tokemomics</a></li>
+                        <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#Partners">Partners</a></li>
+                        <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5 py-[60px] xl:py-[100px] ">
+                            <Social />
+                        </li>
+                    </menu>
+                </div>
+            </div>   
+
                 <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px] flex justify-between w-full bg-[#FFFFFF] text-black">
                     <div className="hidden md:block font-bold text-[20px]">
                         <ul className="flex gap-x-[50px]">
@@ -43,7 +59,7 @@ export default function Header(){
                     <div className="flex flex-col justify-center">
                         <Social />
                     </div>
-                    <div className="md:hidden flex flex-col justify-center">
+                    <div className="md:hidden flex flex-col justify-center" onClick={()=> setIsHidden(false) }>
                         <Image src={burger} alt="menu" />
                     </div>
                 </div>
