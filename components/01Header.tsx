@@ -50,7 +50,7 @@ export default function Header(){
                         <source src="/img/01Header/main.MP4" type="video/mp4"/>
                     </video>
                     {/* {showButton && */}
-                        <div className="absolute w-full flex justify-center bottom-[10%] md:bottom-[5%] transition-opacity duration-1000 opacity-100 easy-out">
+                        <div className="absolute w-full flex justify-center bottom-[10%] md:bottom-[5%] _opacity_animation">
                             <a className="block mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] uppercase rounded-[100px] bg-[#FFFFFF] text-[16px] md:text-[18px] text-[#303030]">Buy</a>
                         </div>
                     {/* } */}
