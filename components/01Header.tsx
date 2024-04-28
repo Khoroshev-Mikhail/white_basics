@@ -34,7 +34,7 @@ export default function Header(){
             <div className="relative w-full h-full min-h-screen max-h-screen flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px]">
 
             <div className={`${isHidden ? 'hidden' : 'block'} md:!hidden fixed z-50 top-0 left-0 w-full min-h-screen max-h-screen bg-white flex flex-col justify-center`}>
-            <Image className="fixed top-[1%] md:top-[1%] right-4 cursor-pointer " src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
+            <Image className="fixed top-[15px] right-[20px] cursor-pointer " src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
                 <div className="relative py-10 sm:py-10 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
                     
                     <menu className={`uppercase block md:w-1/2 w-full relative z-50 text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] mt-10 text-black`}>
