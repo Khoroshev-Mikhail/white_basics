@@ -46,7 +46,7 @@ export default function Header(){
                 </div>
 
                 <div className="w-auto h-auto">
-                    <video autoPlay muted playsInline poster="/img/01Header/poster.webp" className="block mx-auto w-full h-full">
+                    <video autoPlay muted playsInline poster="/img/01Header/loading.gif" className="block mx-auto w-full h-full">
                         <source src="/img/01Header/main.MP4" type="video/mp4"/>
                     </video>
                     {/* {showButton && */}
