@@ -46,8 +46,8 @@ export default function Header(){
                 </div>
 
                 <div className="w-auto h-auto">
-                    <video autoPlay muted playsInline poster="/img/01Header/poster.webp" className="block mx-auto w-full h-full">
-                        <source src="/img/01Header/main.MP4" type="video/mp4"/>
+                    <video autoPlay muted playsInline preload="auto" poster="/img/01Header/poster.webp" className="block mx-auto w-full h-full">
+                        <source src="/img/01Header/main.mp4" type="video/mp4"/>
                     </video>
                     {showButton &&
                         <div className="absolute w-full flex justify-center bottom-[10%] md:bottom-[5%] opacity-100 transition-opacity duration-1000">
