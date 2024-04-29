@@ -1,9 +1,3 @@
-import Image from "next/image";
-import clock from "../public/img/03Roadmap/clock.gif"
-import dollar from "../public/img/03Roadmap/dollar.gif"
-import dollar_placeholder from "../public/img/03Roadmap/placeholder-dollar.gif"
-import top from "../public/img/03Roadmap/top.gif"
-
 export default function Roadmap(){
     return(
         <section id="Roadmap" className="_section pt-[30px] md:pt-[60px]">

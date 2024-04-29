@@ -5,7 +5,6 @@ import Tokenomics from "@/components/04Tokenomics";
 import Partners from "@/components/05Partners";
 import Footer from "@/components/06Footer";
 
-
 export default function Home() {
     return (
         <main>

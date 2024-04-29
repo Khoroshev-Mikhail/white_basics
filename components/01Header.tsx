@@ -1,12 +1,13 @@
 import Image from "next/image"
 import burger from "../public/img/01Header/burger.svg"
 import cross from "../public/img/01Header/cross.svg"
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Social from "./00Social";
 
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState(true);
     // запретить скролл при isHidden true
+
     const [showButton, setShowButton] = useState<boolean>(false);
     useEffect(() => {
         const video = document.querySelector("video");
@@ -15,7 +16,7 @@ export default function Header(){
                 const videoDuration = video.duration;
                 const currentTime = video.currentTime;
                 const timeUntilEnd = videoDuration - currentTime;
-                const threshold = 3; // заданный порог времени (в секундах) до конца видео
+                const threshold = 3; 
                 if (timeUntilEnd <= threshold) {
                     setShowButton(true);
                 }
@@ -29,6 +30,31 @@ export default function Header(){
             };
         }
     }, []);
+
+    const [activeSection, setActiveSection] = useState<number | null>(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        const sections = document.querySelectorAll('section');
+
+        sections.forEach((section, index) => {
+            const top = section.offsetTop;
+            const height = section.offsetHeight;
+
+            if (window.scrollY >= top && window.scrollY < top + height) {
+                setActiveSection(index);
+            }
+        });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return(
         <section id="Header" className="_section relative z-50 min-h-screen max-h-screen bg-black overflow-hidden ">
             <div className="relative w-full h-full min-h-screen max-h-screen flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px]">
@@ -49,11 +75,11 @@ export default function Header(){
             </div>   
 
                 <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px] flex justify-between w-full bg-[#FFFFFF] text-black">
-                    <div className="hidden md:block font-bold text-[20px]">
+                    <div className="hidden md:block  text-[20px]">
                         <ul className="flex gap-x-[50px]">
-                            <li><a href="#About">About</a></li>
-                            <li><a href="#Roadmap">Roadmap</a></li>
-                            <li><a href="#Tokenomics">Tokenomics</a></li>
+                            <li onClick={()=>setActiveSection(0)} className={`${ activeSection === 1 ? 'font-bold' : ''}`}><a href="#About">About</a></li>
+                            <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 2 ? 'font-bold' : ''}`}><a href="#Roadmap">Roadmap</a></li>
+                            <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 3 ? 'font-bold' : ''}`}><a href="#Tokenomics">Tokenomics</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col justify-center">
