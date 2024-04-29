@@ -19,8 +19,8 @@ export default function Roadmap(){
                             Collect 21000 SOL on Pinksale Fairlaunch to provide stable growth after DEX launch.  
                         </div>
                     </div>
-                    <div className="lg:order-3 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
-                        <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster="/img/03Roadmap/clock_poster.webp">
+                    <div className="lg:order-3 lg:aspect-[730/430] bg-[#000] rounded-[10px]">
+                        <video className="w-full h-full rounded-[10px] object-cover" loop autoPlay muted playsInline poster="/img/03Roadmap/clock_poster.webp">
                             <source src="/img/03Roadmap/clock.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -31,7 +31,7 @@ export default function Roadmap(){
                         <div className="mt-[15px] lg:mt-[20px] _text_20_30">
                         Connect <b>all Memecoin communities</b>
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] mb-[15px] md:pb-[20px]  _text_14_18">
+                        <div className="mt-[15px] lg:mt-[20px] mb-[15px] md:pb-[20px] _text_14_18">
                             By allowing our investors to visualize multiple coins on our white sheet of paper we are bringing all Memecoin communities together. 
                         </div>
                     </div>
@@ -71,7 +71,7 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="lg:order-8 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
-                        <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster="/img/03Roadmap/top_poster.webp">
+                        <video className="w-full h-full rounded-[10px]  object-cover" loop autoPlay muted playsInline poster="/img/03Roadmap/top_poster.webp">
                             <source src="/img/03Roadmap/top.MP4" type="video/mp4" />
                         </video>
                     </div>

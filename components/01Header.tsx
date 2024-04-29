@@ -19,6 +19,7 @@ export default function Header(){
                 const threshold = 3; 
                 if (timeUntilEnd <= threshold) {
                     setShowButton(true);
+                    // document.body.style.overflow = "auto";
                 }
             }
         };
