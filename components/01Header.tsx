@@ -3,10 +3,16 @@ import burger from "../public/img/01Header/burger.svg"
 import cross from "../public/img/01Header/cross.svg"
 import { useEffect, useState } from "react";
 import Social from "./00Social";
+import { useParallax } from 'react-scroll-parallax';
 
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState(true);
     // запретить скролл при isHidden true
+
+    const { ref } = useParallax<HTMLDivElement>({ 
+        translateY: [-50, 50], 
+        // easing: [0, 0, 1, 0.1],
+    });
 
     const [showButton, setShowButton] = useState<boolean>(false);
     useEffect(() => {
@@ -32,35 +38,35 @@ export default function Header(){
         }
     }, []);
 
-    const [activeSection, setActiveSection] = useState<number | null>(null);
+    // const [activeSection, setActiveSection] = useState<number | null>(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-        const sections = document.querySelectorAll('section');
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //     const sections = document.querySelectorAll('section');
 
-        sections.forEach((section, index) => {
-            const top = section.offsetTop;
-            const height = section.offsetHeight;
+    //     sections.forEach((section, index) => {
+    //         const top = section.offsetTop;
+    //         const height = section.offsetHeight;
 
-            if (window.scrollY >= top && window.scrollY < top + height) {
-                setActiveSection(index);
-            }
-        });
-        };
+    //         if (window.scrollY >= top && window.scrollY < top + height) {
+    //             setActiveSection(index);
+    //         }
+    //     });
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
+    //     window.addEventListener('scroll', handleScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
 
     return(
-        <section id="Header" className="_section relative z-50 min-h-screen max-h-screen bg-black overflow-hidden ">
+        <section ref={ref} id="Header" className="_section relative z-30 min-h-screen max-h-screen bg-red-500 overflow-hidden ">
             <div className="relative w-full h-full min-h-screen max-h-screen flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px]">
                 
-                <div className={`${isHidden ? 'hidden' : 'block'} md:!hidden fixed z-50 top-0 left-0 w-full min-h-screen max-h-screen bg-white flex flex-col justify-center`}>
+                {/* <div className={`${isHidden ? 'hidden' : 'block'} md:!hidden fixed z-50 top-0 left-0 w-full min-h-screen max-h-screen bg-white flex flex-col justify-center`}>
                 <Image className="fixed top-[15px] right-[20px] cursor-pointer " src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
                     <div className="relative py-10 sm:py-10 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
                         
@@ -73,9 +79,9 @@ export default function Header(){
                             </li>
                         </menu>
                     </div>
-                </div>   
+                </div>    */}
 
-                <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px] flex justify-between w-full bg-[#FFFFFF] text-black">
+                {/* <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px] flex justify-between w-full bg-[#FFFFFF] text-black">
                     <div className="hidden md:block  text-[20px]">
                         <ul className="flex gap-x-[50px]">
                             <li onClick={()=>setActiveSection(0)} className={`${ activeSection === 1 ? 'font-bold' : ''}`}><a href="#About">About</a></li>
@@ -89,9 +95,14 @@ export default function Header(){
                     <div className="md:hidden flex flex-col justify-center" onClick={()=> setIsHidden(false) }>
                         <Image src={burger} alt="menu" />
                     </div>
+                </div> */}
+                <div className="z-0 absolute w-full h-full bg-white top-0 left-0 p-2">
+                    <div className="bg-black rounded-[10px] w-full h-full">
+
+                    </div>
                 </div>
 
-                <div className="w-full h-full">
+                <div className="relative z-30 w-full h-full">
                     {/* <div className="bg-black rounded-[10px]"> */}
                         <video autoPlay muted playsInline className="block mx-auto w-full md:w-auto h-auto">
                             <source src="/img/01Header/main_mobile.MP4" type="video/mp4" media="(max-width: 767px)" />
