@@ -1,6 +1,6 @@
 export default function Roadmap(){
     return(
-        <section id="Roadmap" className="_section pt-[30px] md:pt-[60px]">
+        <section id="Roadmap" className="_section pt-[30px] md:pt-[60px] bg-white  relative z-30">
 
             
             <div className="_wrapper">

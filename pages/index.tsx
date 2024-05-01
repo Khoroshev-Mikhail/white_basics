@@ -73,11 +73,11 @@ export default function Home() {
             </div>
             <Header />
 
-                    <About />
-                    <Roadmap />
-                    <Tokenomics />
-                    <Partners />
-                    <Footer />
+                <About />
+                <Roadmap />
+                <Tokenomics />
+                <Partners />
+                <Footer />
 
         </main>
     );
