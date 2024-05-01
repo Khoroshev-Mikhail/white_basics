@@ -14,7 +14,7 @@ export default function Partners(){
                 <div className='flex justify-between'>
                     <h2 className='_h2 block w-full md:w-2/3 leading-none'>Partners</h2>
                     <div className='hidden md:flex md:flex-col md:justify-center w-1/3'>
-                        <a className="block ml-auto px-[62px] py-[20px] uppercase rounded-[100px] bg-[#303030] text-[18px] text-white cursor-pointer">Buy</a>
+                        <a className="block ml-auto px-[62px] py-[20px] uppercase rounded-[100px] bg-[#303030] text-[18px] text-white cursor-pointer hover:bg-[#F1F1F1] hover:shadow-xl hover:text-black">Buy</a>
                     </div>
                 </div>
                 <div className="mt-5 md:mt-[30px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 md:gap-5">
@@ -39,7 +39,7 @@ export default function Partners(){
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className='mt-[30px] md:hidden flex flex-col justify-center w-full'>
-                    <a className="block mx-auto px-[35px] py-[15px] uppercase rounded-[100px] bg-[#303030] text-[16px] text-white">Buy</a>
+                    <a className="block mx-auto px-[35px] py-[15px] uppercase rounded-[100px] bg-[#303030] text-[16px] text-white ">Buy</a>
                 </div>
                 <div className='mt-[50px] md:hidden flex justify-center'>
                     <Social />
