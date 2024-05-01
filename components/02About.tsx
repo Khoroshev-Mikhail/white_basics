@@ -12,7 +12,10 @@ export default function About(){
     return(
         
         <section  ref={bg} id="About" className="relative z-40 min-h-screen  _section py-[28%] xs:py-[25%] sm:py-[20%] md:py-[14%] flex flex-col justify-center">
-            <div  className="absolute top-0 left-0 z-20 w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.webp')] md:bg-[url('/img/02About/bg.webp')] "></div>
+            <div className='absolute top-0 left-0 z-20 w-full h-full px-2 p-b'>
+                <div  className="w-full h-full rounded-[10px] bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.webp')] md:bg-[url('/img/02About/bg.webp')] "></div>
+            </div>
+            
             
             <div ref={text} className="_wrapper relative z-30">
                 <div className="flex flex-col mx-auto md:w-2/3 lg:w-1/2 [&>div]:text-center tracking-tight leading-tight">

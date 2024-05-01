@@ -11,6 +11,7 @@ export default function Header(){
 
     const { ref } = useParallax<HTMLDivElement>({ 
         translateY: [-50, 50], 
+        // translateY: [0, 0], 
         // easing: [0, 0, 1, 0.1],
     });
 
@@ -63,57 +64,25 @@ export default function Header(){
 
 
     return(
-        <section ref={ref} id="Header" className="_section relative z-30 min-h-screen max-h-screen bg-red-500 overflow-hidden ">
-            <div className="relative w-full h-full min-h-screen max-h-screen flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px]">
+        <section ref={ref} id="Header" className="_section relative  min-h-screen max-h-screen bg-red-500 overflow-hidden ">
+            <div className="relative z-30 w-full h-full min-h-screen flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
                 
-                {/* <div className={`${isHidden ? 'hidden' : 'block'} md:!hidden fixed z-50 top-0 left-0 w-full min-h-screen max-h-screen bg-white flex flex-col justify-center`}>
-                <Image className="fixed top-[15px] right-[20px] cursor-pointer " src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
-                    <div className="relative py-10 sm:py-10 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
-                        
-                        <menu className={`uppercase block md:w-1/2 w-full relative z-50 text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] mt-10 text-black`}>
-                            <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#About">About</a></li>
-                            <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#Tokenomics">Tokemomics</a></li>
-                            <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#Partners">Partners</a></li>
-                            <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5 py-[60px] xl:py-[100px] ">
-                                <Social />
-                            </li>
-                        </menu>
-                    </div>
-                </div>    */}
-
-                {/* <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px] flex justify-between w-full bg-[#FFFFFF] text-black">
-                    <div className="hidden md:block  text-[20px]">
-                        <ul className="flex gap-x-[50px]">
-                            <li onClick={()=>setActiveSection(0)} className={`${ activeSection === 1 ? 'font-bold' : ''}`}><a href="#About">About</a></li>
-                            <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 2 ? 'font-bold' : ''}`}><a href="#Roadmap">Roadmap</a></li>
-                            <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 3 ? 'font-bold' : ''}`}><a href="#Tokenomics">Tokenomics</a></li>
-                        </ul>
-                    </div>
-                    <div className="flex flex-col justify-center">
-                        <Social />
-                    </div>
-                    <div className="md:hidden flex flex-col justify-center" onClick={()=> setIsHidden(false) }>
-                        <Image src={burger} alt="menu" />
-                    </div>
-                </div> */}
-                <div className="z-0 absolute w-full h-full bg-white top-0 left-0 p-2">
+                <div className="z-0 absolute w-full h-full bg-white top-0 left-0 p-2 pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
                     <div className="bg-black rounded-[10px] w-full h-full">
 
                     </div>
                 </div>
 
-                <div className="relative z-30 w-full h-full">
-                    {/* <div className="bg-black rounded-[10px]"> */}
-                        <video autoPlay muted playsInline className="block mx-auto w-full md:w-auto h-auto">
-                            <source src="/img/01Header/main_mobile.MP4" type="video/mp4" media="(max-width: 767px)" />
-                            <source src="/img/01Header/main.MP4" type="video/mp4"/>
-                        </video>
-                        {showButton &&
-                            <div className="absolute w-full flex justify-center bottom-[10%] md:bottom-[5%] _opacity_animation">
-                                <a className="block mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] uppercase rounded-[100px] bg-[#FFFFFF] text-[16px] md:text-[18px] text-[#303030]">Buy</a>
-                            </div>
-                        }
-                    {/* </div> */}
+                <div className="z-30 w-full h-full overflow-hidden flex flex-col justify-center">
+                    <video autoPlay muted playsInline className="block mx-auto px-2 w-full md:w-auto h-full" >
+                        <source src="/img/01Header/main_mobile.MP4" type="video/mp4" media="(max-width: 767px)" />
+                        <source src="/img/01Header/main.MP4" type="video/mp4"/>
+                    </video>
+                    {showButton &&
+                        <div className="absolute w-full flex justify-center bottom-[10%] md:bottom-[5%] _opacity_animation">
+                            <a className="block mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] uppercase rounded-[100px] bg-[#FFFFFF] text-[16px] md:text-[18px] text-[#303030]">Buy</a>
+                        </div>
+                    }
                 </div>
             </div>
         </section>
