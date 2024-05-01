@@ -59,9 +59,9 @@ export default function Home() {
             <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px] flex justify-between w-full bg-[#FFFFFF] text-black">
                 <div className="hidden md:block  text-[20px]">
                     <ul className="flex gap-x-[50px]">
-                        <li onClick={()=>setActiveSection(0)} className={`${ activeSection === 1 ? 'font-bold' : ''} hover:text-[#333] relative after:bg-black after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`}><a href="#About">About</a></li>
-                        <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 2 ? 'font-bold' : ''} hover:text-[#333] relative after:bg-black after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`}><a href="#Roadmap">Roadmap</a></li>
-                        <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 3 ? 'font-bold' : ''} hover:text-[#333] relative after:bg-black after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`}><a href="#Tokenomics">Tokenomics</a></li>
+                        <li onClick={()=>setActiveSection(0)} className={`${ activeSection === 1 ? 'font-bold' : ''} hover:text-[#666] cursor-pointer`}><a href="#About">About</a></li>
+                        <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 2 ? 'font-bold' : ''} hover:text-[#666] cursor-pointer`}><a href="#Roadmap">Roadmap</a></li>
+                        <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 3 ? 'font-bold' : ''} hover:text-[#666] cursor-pointer`}><a href="#Tokenomics">Tokenomics</a></li>
                     </ul>
                 </div>
                 <div className="flex flex-col justify-center">
