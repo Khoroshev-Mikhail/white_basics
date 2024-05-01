@@ -13,8 +13,8 @@ export default function Partners(){
             <div className="_wrapper">
                 <div className='flex justify-between'>
                     <h2 className='_h2 block w-full md:w-2/3 leading-none'>Partners</h2>
-                    <div className='hidden md:flex md:flex-col md:justify-center  w-1/3'>
-                        <a className="block ml-auto px-[62px] py-[20px] uppercase rounded-[100px] bg-[#303030] text-[18px] text-white">Buy</a>
+                    <div className='hidden md:flex md:flex-col md:justify-center w-1/3'>
+                        <a className="block ml-auto px-[62px] py-[20px] uppercase rounded-[100px] bg-[#303030] text-[18px] text-white cursor-pointer">Buy</a>
                     </div>
                 </div>
                 <div className="mt-5 md:mt-[30px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 md:gap-5">
