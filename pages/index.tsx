@@ -12,10 +12,10 @@ import burger from "../public/img/01Header/burger.svg"
 import cross from "../public/img/01Header/cross.svg"
 
 export default function Home() {
-    const { ref } = useParallax<HTMLDivElement>({ 
-        translateY: [0, 0], 
-        easing: [0, 0, 1, 0.1],
-    });
+    // const { ref } = useParallax<HTMLDivElement>({ 
+    //     translateY: [0, 0], 
+    //     easing: [0, 0, 1, 0.1],
+    // });
     const [activeSection, setActiveSection] = useState<number | null>(null);
     const [ isHidden, setIsHidden ] = useState(true);
 
@@ -72,13 +72,13 @@ export default function Home() {
                 </div>
             </div>
             <Header />
-            <div ref={ref} className="relative z-30 w-full h-full bg-white">
-                <About />
-                <Roadmap />
-                <Tokenomics />
-                <Partners />
-                <Footer />
-            </div>
+
+                    <About />
+                    <Roadmap />
+                    <Tokenomics />
+                    <Partners />
+                    <Footer />
+
         </main>
     );
 }

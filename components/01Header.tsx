@@ -65,7 +65,7 @@ export default function Header(){
 
     return(
         <section ref={ref} id="Header" className="_section relative  min-h-screen max-h-screen bg-red-500 overflow-hidden ">
-            <div className="relative z-30 w-full h-full min-h-screen flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
+            <div className="relative z-20 w-full h-full min-h-screen flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
                 
                 <div className="z-0 absolute w-full h-full bg-white top-0 left-0 p-2 pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
                     <div className="bg-black rounded-[10px] w-full h-full">
@@ -73,7 +73,7 @@ export default function Header(){
                     </div>
                 </div>
 
-                <div className="z-30 w-full h-full overflow-hidden flex flex-col justify-center">
+                <div className="z-20 w-full h-full overflow-hidden flex flex-col justify-center">
                     <video autoPlay muted playsInline className="block mx-auto px-2 w-full md:w-auto h-full" >
                         <source src="/img/01Header/main_mobile.MP4" type="video/mp4" media="(max-width: 767px)" />
                         <source src="/img/01Header/main.MP4" type="video/mp4"/>
