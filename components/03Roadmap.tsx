@@ -52,7 +52,8 @@ export default function Roadmap(){
                         Within 6 months White Basics coin reaches 1$, and our team starts to develop the safest, fastest, and cheapest Blockchain. White Basics Chain is sure to take over the Blockchain World.
                         </div>
                     </div>
-                    <div className="lg:order-7 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
+                    <div className="relative lg:order-7 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
+                        <div className="absolute w-full h-full border-l-[1px] border-r-[2px] border-white z-30"></div>
                         {/* <Image placeholder="blur" blurDataURL={dollar_placeholder.src} className="w-full h-full rounded-[10px] " src={dollar} alt=""/> */}
                         <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster="/img/03Roadmap/dollar_poster.webp">
                             <source src="/img/03Roadmap/dollar.mp4" type="video/mp4" />
