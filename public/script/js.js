@@ -17,7 +17,7 @@ am4core.useTheme(am4themes_animated);
 var chart = am4core.create("chartdiv", am4charts.PieChart3D);
 chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
-// chart.legend = new am4charts.Legend();
+
 chart.angle = 30;
 chart.depth = 50;
 chart.data = [
@@ -79,13 +79,14 @@ chart.data = [
 ];
 
 chart.innerRadius = am4core.percent(55);
+// chart.legend = new am4charts.Legend();
 
 var series = chart.series.push(new am4charts.PieSeries3D());
 series.dataFields.value = "value";
 series.dataFields.category = "title";
 series.slices.template.propertyFields.fill = "color";
 
-if(window.innerWidth <= 500){
+if(window.innerWidth <= 767){
     series.labels.template.disabled = true;
     series.ticks.template.disabled = true;
 }

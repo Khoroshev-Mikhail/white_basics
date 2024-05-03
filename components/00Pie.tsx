@@ -29,8 +29,9 @@ export default function Pie(){
       setTimeout(()=>{
         const elementsWithAriaLabelledby = document.querySelectorAll('[aria-labelledby]');
         elementsWithAriaLabelledby.forEach(element => {
-          console.log('ara')
-          element.parentNode?.removeChild(element);
+          if (element && element.getAttribute('aria-controls') == null){
+            element.parentNode?.removeChild(element);
+          }
         });
       }, 2000);
     };
