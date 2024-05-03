@@ -79,8 +79,6 @@ chart.data = [
 ];
 
 chart.innerRadius = am4core.percent(55);
-// chart.radius = 100;
-
 
 var series = chart.series.push(new am4charts.PieSeries3D());
 series.dataFields.value = "value";
