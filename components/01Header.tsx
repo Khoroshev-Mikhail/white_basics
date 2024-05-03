@@ -69,7 +69,7 @@ export default function Header(){
                 <div className={`raltive z-20 w-full md:w-[2/3] h-full px-2 overflow-hidden flex flex-col justify-center rounded-[10px]`}>
                     <video autoPlay muted playsInline className="block object-cover w-full md:w-2/3 md:mx-auto md:h-full max-h-full max-w-full rounded-[10px]" >
                         <source src="/img/01Header/main.MP4" type="video/mp4" media="(min-width: 768px)"/>
-                        <source src="/img/01Header/main_mobile.MP4" type="video/mp4" media="(min-width: 320px)" />
+                        <source src="/img/01Header/main_mobile.MP4" type="video/mp4"/>
                     </video>
                     {showButton &&
                         <div className="absolute w-full flex justify-center left-0 bottom-[15%] md:bottom-[5%] _opacity_animation">
