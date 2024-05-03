@@ -23,7 +23,7 @@ export default function About(){
                         About
                     </h2>
                     <div className=" mt-5 md:mt-7.5 _text_14_18">
-                    White Basics is a unique opportunity to have multiple coins in your crypto wallet by having only one coin. Use our white sheet of paper to visualize your favorite pet, artist, politician, or draw your own logo on it.
+                    White Basics is a unique opportunity to have multiple coins in your crypto wallet by having only one coin.<br/>Use our white sheet of paper to visualize your favorite pet, artist, politician, or draw your own logo on it.
                         <br />
                         <br />
                         It is your figment of imagination that completes the White Basics’ concept.
