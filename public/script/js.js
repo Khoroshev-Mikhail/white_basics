@@ -17,9 +17,6 @@ am4core.useTheme(am4themes_animated);
 var chart = am4core.create("chartdiv", am4charts.PieChart3D);
 chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
-
-chart.angle = 30;
-chart.depth = 50;
 chart.data = [
   {
     title: 'Special round',
@@ -77,6 +74,8 @@ chart.data = [
     "color": am4core.color("#DAC2EF")
   }
 ];
+chart.angle = 30;
+chart.depth = 50;
 
 chart.innerRadius = am4core.percent(55);
 // chart.legend = new am4charts.Legend();
@@ -100,6 +99,7 @@ series.slices.template.showTooltipOn = 'hover';
 
 if(window.innerWidth <= 767){
     series.slices.template.showTooltipOn = 'hit';
+    chart.depth = 30;
     series.labels.template.disabled = true;
     series.ticks.template.disabled = true;
 }
