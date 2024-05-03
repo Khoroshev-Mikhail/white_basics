@@ -44,9 +44,21 @@ export default function Pie(){
     };
   }, []);
   return(
-    <div id="chartdiv" style={{width: '100%', minHeight: '400px'}}>
-      
-    </div>
+    <>
+        <style>{`
+          .amcharts-pie-slice-tooltip {
+              background-color: #fff;
+              color: #333;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              padding: 10px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+      `}</style>
+      <div id="chartdiv" style={{width: '100%', minHeight: '400px'}}>
+        
+      </div>
+    </>
   )
 }
 {/* <script src="https://cdn.amcharts.com/lib/4/core.js"></script> */}
