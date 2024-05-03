@@ -91,6 +91,7 @@ chart.hiddenState.properties.opacity = 0
 series.labels.template.text = "{category} {value.title}";
 series.slices.template.tooltipPosition = "pointer";
 series.slices.template.showTooltipOn = 'hit';
+
 // series.slices.template.tooltipPosition = "fixed";
 // series.slices.template.tooltipX = 0;
 // series.slices.template.tooltipY = 0;
