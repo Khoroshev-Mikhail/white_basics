@@ -75,7 +75,7 @@ chart.data = [
   }
 ];
 chart.angle = 30;
-chart.depth = 50;
+chart.depth = 45;
 
 chart.innerRadius = am4core.percent(55);
 // chart.legend = new am4charts.Legend();
@@ -91,11 +91,27 @@ series.labels.template.text = "{category} {value.title}";
 series.slices.template.tooltipPosition = "pointer";
 series.slices.template.showTooltipOn = 'hover';
 
+// Add and configure Series
+
+// var container = new am4core.Container();
+// container.parent = series;
+// container.horizontalCenter = "middle";
+// container.verticalCenter = "middle";
+// container.width = am4core.percent(40) / Math.sqrt(2);
+// container.fill = "white";
+// var label = new am4core.Label();
+// label.parent = container;
+// label.text = "SUM: 123";
+// label.horizontalCenter = "middle";
+// label.verticalCenter = "middle";
+// label.fontSize = 30;
+
 // series.slices.template.tooltipPosition = "fixed";
 // series.slices.template.tooltipX = 0;
 // series.slices.template.tooltipY = 0;
-
 // series.slices.template.tooltipHTML = `<div style="background-color: #fff; color: #333; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">{category}: {value} ыы</div>`;
+
+
 
 if(window.innerWidth <= 767){
     series.slices.template.showTooltipOn = 'hit';

@@ -5,10 +5,10 @@ import x from '../public/img/00Social/x.svg'
 export default function Social({ className }: { className?: string }){
     return(
         <div className={"flex gap-x-5 md:gap-x-10 relative z-30" + " " + className}>
-            <a href=''>
+            <a href='https://t.me/whitebasics'>
                 <Image src={ tg } alt="Telegram" className="block w-[18px] xs:w-[27px]"/>
             </a>
-            <a href=''>
+            <a href='https://twitter.com/whitebasicscoin'>
                 <Image src={ x } alt="Twitter" className="block w-[18px] xs:w-[27px]"/>
             </a>
         </div>
