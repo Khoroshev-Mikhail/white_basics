@@ -90,7 +90,7 @@ chart.hiddenState.properties.opacity = 0
 
 series.labels.template.text = "{category} {value.title}";
 series.slices.template.tooltipPosition = "pointer";
-series.slices.template.showTooltipOn = 'hit';
+series.slices.template.showTooltipOn = 'hover';
 
 // series.slices.template.tooltipPosition = "fixed";
 // series.slices.template.tooltipX = 0;
@@ -99,6 +99,7 @@ series.slices.template.showTooltipOn = 'hit';
 // series.slices.template.tooltipHTML = `<div style="background-color: #fff; color: #333; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">{category}: {value} ыы</div>`;
 
 if(window.innerWidth <= 767){
+    series.slices.template.showTooltipOn = 'hit';
     series.labels.template.disabled = true;
     series.ticks.template.disabled = true;
 }
