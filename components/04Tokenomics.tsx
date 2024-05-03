@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import tokenomics from "../public/img/04Tokenomics/diagram.webp"
 import tokenomics_mobile from "../public/img/04Tokenomics/diagram_mobile.webp"
-import Pie from './07Pie'
+import Pie from './00Pie'
 
 
 export default function Tokenomics(){
