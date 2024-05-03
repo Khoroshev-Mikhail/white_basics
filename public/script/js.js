@@ -92,13 +92,5 @@ if(window.innerWidth <= 500){
     series.ticks.template.disabled = true;
 }
 
-// series.slices.template.stroke = am4core.color("#4a2abb");
-// series.slices.template.strokeWidth = 1;
-// series.slices.template.strokeOpacity = 1;
-
-// aria-labelledby="id-148-title"
-
-// series.labels.template.disabled = true;
-// series.ticks.template.disabled = true;
-
+chart.hiddenState.properties.opacity = 0
 series.labels.template.text = "{category} {value.title}";
