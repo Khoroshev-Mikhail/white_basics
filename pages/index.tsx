@@ -21,16 +21,16 @@ export default function Home() {
 
     useEffect(() => {
         const handleScroll = () => {
-        const sections = document.querySelectorAll('section');
+            const sections = document.querySelectorAll('section');
 
-        sections.forEach((section, index) => {
-            const top = section.offsetTop;
-            const height = section.offsetHeight;
+            sections.forEach((section, index) => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
 
-            if (window.scrollY >= top && window.scrollY < top + height) {
-                setActiveSection(index);
-            }
-        });
+                if (window.scrollY >= top && window.scrollY < top + height) {
+                    setActiveSection(index);
+                }
+            });
         };
 
         window.addEventListener('scroll', handleScroll);
