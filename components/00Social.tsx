@@ -13,7 +13,7 @@ export default function Social({ className }: { className?: string }){
                 <Image src={ x } alt="Twitter" className="block w-[18px] xs:w-[27px]"/>
             </a>
             <a href='mailto:nfo@whitebasics.org'>
-                <Image src={ email } alt="Twitter" className="block w-[18px] xs:w-[27px]"/>
+                <Image src={ email } alt="Email" className="block w-[18px] xs:w-[27px]"/>
             </a>
         </div>
     )

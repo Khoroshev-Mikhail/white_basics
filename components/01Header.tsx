@@ -7,7 +7,8 @@ import { useParallax } from 'react-scroll-parallax';
 
 export default function Header(){
     const { ref } = useParallax<HTMLDivElement>({ 
-        translateY: [-50, 50], 
+        // translateY: [-50, 50], 
+        speed: -500
         // translateY: [0, 0], 
         // easing: [0, 0, 1, 0.1],
     });
