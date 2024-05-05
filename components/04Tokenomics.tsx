@@ -24,7 +24,7 @@ export default function Tokenomics(){
                     <div data-aos="zoom-in" data-aos-duration="2000" className='w-full overflow-hidden mt-[5%] px-5 text-center font-medium cursor-pointer ' onClick={()=>navigator.clipboard.writeText('29kUdSqYnpo1sqC6TfnkLxT7FunSm4DRBHxb3i57WnLr')}>
                         Token SOL: <Image className='md:hidden inline w-5 h-5 pb-1' src={copy} alt='copy'/><br/>
                         <span className='hidden md:inline decoration-dashed border-dashed border-b-[1px] border-black px-2 hover:border-b-[0px]'>29kUdSqYnpo1sqC6TfnkLxT7FunSm4DRBHxb3i57WnLr</span> <Image className='hidden md:inline w-5 h-5 pb-1' src={copy} alt='copy'/>
-                        <span className='md:hidden decoration-dashed border-dashed border-b-[1px] border-black hover:border-b-[0px]'>...SqYnpo1sqC6TfnkLxT7FunSm4DRBHxb3i5....</span>
+                        <span className='md:hidden text-[12px] decoration-dashed border-dashed border-b-[1px] border-black hover:border-b-[0px]'>...SqYnpo1sqC6TfnkLxT7FunSm4DRBHxb3i5....</span>
                     </div>
                 </div>
   
