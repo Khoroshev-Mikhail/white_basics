@@ -20,6 +20,10 @@ export default function Tokenomics(){
                     <div className=' px-5'>
                         <Pie />
                     </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000" className='w-full overflow-hidden mt-[5%] px-5 text-center font-medium' onClick={()=>navigator.clipboard.writeText('29kUdSqYnpo1sqC6TfnkLxT7FunSm4DRBHxb3i57WnLr')}>
+                        Token SOL:<br/>
+                        29kUdSqYnpo1sqC6TfnkLx<wbr/>T7FunSm4DRBHxb3i57WnLr
+                    </div>
                 </div>
   
             </div>
