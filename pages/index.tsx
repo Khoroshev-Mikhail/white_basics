@@ -55,7 +55,7 @@ export default function Home() {
                     </div>
             </div> 
 
-            <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px] flex justify-end md:justify-between w-full bg-[#FFFFFF] text-black">
+            <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px] flex justify-between w-full bg-[#FFFFFF] text-black">
                 <div className="hidden md:block  text-[20px]">
                     <ul className="flex gap-x-[50px]">
                         <li onClick={()=>setActiveSection(0)} className={`${ activeSection === 1 ? 'font-bold' : ''} hover:text-[#666] cursor-pointer`}><a href="#About">About</a></li>
@@ -63,7 +63,7 @@ export default function Home() {
                         <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 3 ? 'font-bold' : ''} hover:text-[#666] cursor-pointer`}><a href="#Tokenomics">Tokenomics</a></li>
                     </ul>
                 </div>
-                <div className="hidden md:flex flex-col justify-center">
+                <div className="flex flex-col justify-center">
                     <Social />
                 </div>
                 <div className="md:hidden flex flex-col justify-center" onClick={()=> setIsHidden(false) }>
