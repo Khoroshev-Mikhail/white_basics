@@ -24,7 +24,7 @@ chart.data = [
     "color": am4core.color("#6555C7")
   },
   {
-    title: 'Speed',
+    title: 'Seed',
     value: 2.1,
     "color": am4core.color("#CAFFEF")
   },
