@@ -6,9 +6,6 @@ import Social from "./00Social";
 import { useParallax } from 'react-scroll-parallax';
 
 export default function Header(){
-    const [ isHidden, setIsHidden ] = useState(true);
-    // запретить скролл при isHidden true
-
     const { ref } = useParallax<HTMLDivElement>({ 
         translateY: [-50, 50], 
         // translateY: [0, 0], 
@@ -71,12 +68,6 @@ export default function Header(){
                         <source src="/img/01Header/main.MP4" type="video/mp4" media="(min-width: 768px)"/>
                         <source src="/img/01Header/main_mobile.MP4" type="video/mp4"/>
                     </video>
-                    {/* <video autoPlay muted playsInline className="hidden sm:block object-cover w-full md:w-2/3 md:mx-auto md:h-full max-h-full max-w-full rounded-[10px]" >
-                        <source src="/img/01Header/main.MP4" type="video/mp4"/>
-                    </video>
-                    <video autoPlay muted playsInline className="sm:hidden block object-cover w-full md:w-2/3 md:mx-auto md:h-full max-h-full max-w-full rounded-[10px]" >
-                        <source src="/img/01Header/main_mobile.MP4" type="video/mp4"/>
-                    </video> */}
                     {showButton &&
                         <div className="absolute w-full flex justify-center left-0 bottom-[15%] md:bottom-[5%] _opacity_animation">
                             <a className="block mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] cursor-pointer uppercase rounded-[100px] bg-[#FFFFFF] hover:bg-[#F1F1F1] hover:shadow-inner text-[16px] md:text-[18px] text-[#303030]">Buy</a>
