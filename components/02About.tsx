@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useParallax } from 'react-scroll-parallax';
 
 export default function About(){
@@ -9,9 +10,10 @@ export default function About(){
         opacity: [1, 0], // Начальное значение прозрачности: 0 (полностью прозрачный), конечное значение: 1 (полностью непрозрачный)
         easing: [1, 0, 0.8, 1],
     });
+
     return(
         
-        <section  ref={bg} id="About" className="relative z-30 min-h-screen  _section py-[28%] xs:py-[25%] sm:py-[20%] md:py-[14%] flex flex-col justify-center bg-white">
+        <section  ref={bg} id="About" className="relative z-30 min-h-screen _section py-[28%] xs:py-[25%] sm:py-[20%] md:py-[14%] flex flex-col justify-center bg-white">
             <div className='absolute top-0 left-0 z-20 w-full h-full px-2 p-b'>
                 <div  className="w-full h-full rounded-[10px] bg-cover bg-center bg-no-repeat bg-[url('/img/02About/bg_mobile.webp')] md:bg-[url('/img/02About/bg.webp')] "></div>
             </div>

@@ -71,6 +71,7 @@ export default function Home() {
                     <Image src={burger} alt="menu" />
                 </div>
             </div>
+            
             <Header />
             <About />
             <Roadmap />
