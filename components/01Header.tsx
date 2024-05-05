@@ -58,7 +58,7 @@ export default function Header(){
                 </div>
             </section>
 
-            <div className={`pt-[${height}px] relative z-50 min-h-screen`}>
+            <div className={`pt-[${height}px] relative -z-50 min-h-screen`}>
 
             </div>
         </>
