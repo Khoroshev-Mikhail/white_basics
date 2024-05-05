@@ -21,7 +21,7 @@ export default function Roadmap(){
                     </div>
                     <div className="lg:order-3 lg:aspect-[730/430] bg-[#000] rounded-[10px]">
                         <video className="w-full h-full rounded-[10px] object-cover" loop autoPlay muted playsInline poster="/img/03Roadmap/clock_poster.webp">
-                            <source src="/img/03Roadmap/clock.mp4" type="video/mp4" />
+                            <source src="/img/03Roadmap/clock.MP4" type="video/mp4" />
                         </video>
                     </div>
                     <div className="lg:order-2">
@@ -53,10 +53,10 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="relative lg:order-7 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
-                        <div className="absolute w-full h-full border-l-[1px] border-r-[2px] border-white z-30"></div>
+                        <div className="absolute w-full h-full border-l-[2px] border-r-[2px] border-white z-50 box-border rounded-[10px]"></div>
                         {/* <Image placeholder="blur" blurDataURL={dollar_placeholder.src} className="w-full h-full rounded-[10px] " src={dollar} alt=""/> */}
                         <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster="/img/03Roadmap/dollar_poster.webp">
-                            <source src="/img/03Roadmap/dollar.mp4" type="video/mp4" />
+                            <source src="/img/03Roadmap/dollar.MP4" type="video/mp4" />
                         </video>
                     </div>
 

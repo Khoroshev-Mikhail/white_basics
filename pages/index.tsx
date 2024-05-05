@@ -64,7 +64,7 @@ export default function Home() {
                     </ul>
                 </div>
                 <div className="flex flex-col justify-center">
-                    <Social />
+                    {/* <Social /> */}
                 </div>
                 <div className="md:hidden flex flex-col justify-center" onClick={()=> setIsHidden(false) }>
                     <Image src={burger} alt="menu" />
