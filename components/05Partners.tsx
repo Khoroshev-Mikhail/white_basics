@@ -9,7 +9,7 @@ import Social from './00Social'
 
 export default function Partners(){
     return(
-        <section id="Partners" className="_section mt-[30px] md:mt-[60px]">
+        <section id="Partners" className="_section mt-[30px] md:mt-[60px] bg-white relative z-30">
             <div className="_wrapper">
                 <div className='flex justify-between'>
                     <h2 className='_h2 block w-full md:w-2/3 leading-none'>Partners</h2>

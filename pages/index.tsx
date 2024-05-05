@@ -13,8 +13,9 @@ import cross from "../public/img/01Header/cross.svg"
 
 export default function Home() {
     // const { ref } = useParallax<HTMLDivElement>({ 
-    //     translateY: [0, 0], 
-    //     easing: [0, 0, 1, 0.1],
+    //     // translateY: [0, 0], 
+    //     // easing: [0, 0, 1, 0.1],
+    //     speed: 100
     // });
     const [activeSection, setActiveSection] = useState<number | null>(null);
     const [ isHidden, setIsHidden ] = useState(true);
@@ -70,7 +71,6 @@ export default function Home() {
                     <Image src={burger} alt="menu" />
                 </div>
             </div>
-            
             <Header />
             <About />
             <Roadmap />
