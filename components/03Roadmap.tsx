@@ -58,7 +58,7 @@ export default function Roadmap(){
                             WB coin <b>1$</b>
                         </div>
                         <div className="mt-[15px] lg:mt-[20px] mb-[15px] md:pb-[20px]  _text_14_18">
-                        Within 6 months White Basics coin reaches 1$, and our team starts to develop the safest, fastest, and cheapest Blockchain. White Basics Chain is sure to take over the Blockchain World.
+                            Within 6 months White Basics coin reaches 1$, and our team starts to develop the safest, fastest, and cheapest Blockchain. White Basics Chain is sure to take over the Blockchain World.
                         </div>
                     </div>
                     <div className="relative lg:order-7 lg:aspect-[730/430] bg-black rounded-[10px]">

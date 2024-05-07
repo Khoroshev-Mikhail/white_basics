@@ -123,7 +123,6 @@ export default function Header(){
                             <source src={main} type="video/mp4" media="(min-width: 768px)"/>
                             <source src={main_mobile} type="video/mp4"/>
                         </video>
-
                     </div>
                 </div>
             </section>
