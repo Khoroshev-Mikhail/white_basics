@@ -44,17 +44,8 @@ body {
     100% {
       opacity: 100;
     }
-  }
+}
   
-  ._opacity_animation {
-    animation: _opacity_animation 1s ease-in-out;
-  }
-
-  .amcharts-pie-slice-tooltip {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+._opacity_animation {
+    animation: _opacity_animation 0.3s ease-in-out;
 }

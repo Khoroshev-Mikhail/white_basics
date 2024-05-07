@@ -19,22 +19,22 @@ export default function Partners(){
                 </div>
                 <div className="mt-5 md:mt-[30px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 md:gap-5">
                     <div data-aos="fade-up" data-aos-duration="1000" className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_1} alt="Raydium"/>
+                        <Image fetchPriority="high" className='w-2/3 mx-auto' src={partner_1} alt="Raydium"/>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_2} alt="PinkSale"/>
+                        <Image fetchPriority="high" className='w-2/3 mx-auto' src={partner_2} alt="PinkSale"/>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_3} alt="InterFi"/>
+                        <Image fetchPriority="high" className='w-2/3 mx-auto' src={partner_3} alt="InterFi"/>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_4} alt="Solana"/>
+                        <Image fetchPriority="high" className='w-2/3 mx-auto' src={partner_4} alt="Solana"/>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_5} alt="CoinMarketCap"/>
+                        <Image fetchPriority="high" className='w-2/3 mx-auto' src={partner_5} alt="CoinMarketCap"/>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" className='p-5 md:p-10 col-span-1 flex flex-col justify-center rounded-[10px] bg-gradient-to-b from-[#F4F4F4] via-[#F9F9F9] to-[#F4F4F4]'>
-                        <Image className='w-2/3 mx-auto' src={partner_6} alt="CoinGeko"/>
+                        <Image fetchPriority="high" className='w-2/3 mx-auto' src={partner_6} alt="CoinGeko"/>
                     </div>
                 </div>
 
