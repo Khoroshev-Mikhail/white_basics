@@ -4,7 +4,7 @@ const nextConfig = {
   transpilePackages: ['three'],
   reactStrictMode: true,
   output: 'export',
-  // basePath: '', если будут указаны пути, не забудьте их указать в настройках вебака ниже
+  // basePath: '', если будут указаны пути, не забудьте проверить их в настройках вебака ниже
   // assetPrefix: '',
   images: {
     unoptimized: true
