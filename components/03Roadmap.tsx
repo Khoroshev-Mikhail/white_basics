@@ -1,11 +1,11 @@
-import clock_poster from '../public/img/03Roadmap/clock_poster.webp'
-import clock from '../public/img/03Roadmap/clock.mp4'
+import phase1_poster from '../public/img/03Roadmap/phase1_poster.webp'
+import phase1 from '../public/img/03Roadmap/phase1.mp4'
 import phase2_poster from '../public/img/03Roadmap/phase2_poster.webp'
 import phase2 from '../public/img/03Roadmap/phase2.MP4'
-import dollar_poster from '../public/img/03Roadmap/dollar_poster.webp'
-import dollar from '../public/img/03Roadmap/dollar.mp4'
-import top_poster from '../public/img/03Roadmap/top_poster.webp'
-import top from '../public/img/03Roadmap/top.MP4'
+import phase3_poster from '../public/img/03Roadmap/phase3_poster.webp'
+import phase3 from '../public/img/03Roadmap/phase3.mp4'
+import phase4_poster from '../public/img/03Roadmap/phase4_poster.webp'
+import phase4 from '../public/img/03Roadmap/phase4.mp4'
 
 export default function Roadmap(){
 
@@ -29,8 +29,8 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="lg:order-3 lg:aspect-[730/430] bg-[#000] rounded-[10px]">
-                        <video className="w-full h-full rounded-[10px] object-cover" loop autoPlay muted playsInline poster={clock_poster.src}>
-                            <source src={clock} type="video/mp4" />
+                        <video className="w-full h-full rounded-[10px] object-cover" loop autoPlay muted playsInline poster={phase1_poster.src}>
+                            <source src={phase1} type="video/mp4" />
                         </video>
                     </div>
                     <div className="lg:order-2">
@@ -63,8 +63,8 @@ export default function Roadmap(){
                     </div>
                     <div className="relative lg:order-7 lg:aspect-[730/430] bg-black rounded-[10px]">
                         {/* <div className="absolute w-full h-full border-l-[2px] border-r-[2px] border-white z-50 box-border rounded-[10px]"></div> */}
-                        <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster={dollar_poster.src}>
-                            <source src={dollar} type="video/mp4" />
+                        <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster={phase3_poster.src}>
+                            <source src={phase3} type="video/mp4" />
                         </video>
                     </div>
 
@@ -80,8 +80,8 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="lg:order-8 lg:aspect-[730/430] bg-[#F4F4F4] rounded-[10px]">
-                        <video className="w-full h-full rounded-[10px]  object-cover" loop autoPlay muted playsInline poster={top_poster.src}>
-                            <source src={top} type="video/mp4" />
+                        <video className="w-full h-full rounded-[10px]  object-cover" loop autoPlay muted playsInline poster={phase4_poster.src}>
+                            <source src={phase4} type="video/mp4" />
                         </video>
                     </div>
                 </div>
