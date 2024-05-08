@@ -3,7 +3,7 @@ import Image from "next/image";
 import Social from "@/components/00Social";
 import burger from "../public/img/01Header/burger.svg"
 import cross from "../public/img/01Header/cross.svg"
-// import main from "../public/img/01Header/main.mp4"
+import main from "../public/img/01Header/main.mp4"
 import main_mobile from "../public/img/01Header/main_mobile.MP4"
 
 export default function Header(){
@@ -120,7 +120,8 @@ export default function Header(){
                 
                     <div className={`relative z-20 w-full md:w-[2/3] h-full px-2 overflow-hidden flex flex-col justify-center rounded-[10px]`}>
                         <video autoPlay muted playsInline className="block object-cover w-full md:w-2/3 md:mx-auto md:h-full  max-w-full rounded-[10px]" >
-                            <source src="/img/01Header/main.mp4" type="video/mp4" media="(min-width: 768px)"/>
+                            <source src={main} type="video/mp4" media="(min-width: 768px)"/>
+                            {/* <source src="/img/01Header/main.mp4" type="video/mp4" media="(min-width: 768px)"/> */}
                             <source src={main_mobile} type="video/mp4"/>
                         </video>
                     </div>
