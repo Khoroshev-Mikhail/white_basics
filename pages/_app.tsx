@@ -7,14 +7,14 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(()=>{
-    AOS.init({
-        once: true
-    })
-}, [])
-  return (
-    <ParallaxProvider>
-      <Component {...pageProps} />
-    </ParallaxProvider>
-  )
+    useEffect(()=>{
+        AOS.init({
+            once: true
+        })
+    }, [])
+    return (
+      <ParallaxProvider>
+          <Component {...pageProps} />
+      </ParallaxProvider>
+    )
 }

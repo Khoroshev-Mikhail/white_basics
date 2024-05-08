@@ -42,17 +42,17 @@ const data = [
   },
   {
     title: 'Influencers',
-    value: 8,
+    value: 10.2,
     "color": am4core.color("#7C81FF")
   },
   {
     title: 'Charity',
-    value: 2.4,
+    value: 5,
     "color": am4core.color("#56CDAA")
   },
   {
     title: 'Dex liquidity',
-    value: 19.2,
+    value: 14.4,
     "color": am4core.color("#5151F9")
   },
   {
