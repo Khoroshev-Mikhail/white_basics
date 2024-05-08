@@ -51,7 +51,7 @@ export default function Roadmap(){
                     </div>
 
                     <div className="lg:order-5">
-                        <div className="mt-[30px] lg:mt-[40px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
+                        <div className="mt-[30px] lg:mt-[100px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
                             Phase 3
                         </div>
                         <div className="mt-[15px] lg:mt-[20px] _text_20_30">
@@ -69,7 +69,7 @@ export default function Roadmap(){
                     </div>
 
                     <div className="lg:order-6">
-                        <div className="mt-[30px] lg:mt-[40px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
+                        <div className="mt-[30px] lg:mt-[100px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
                             Phase 4
                         </div>
                         <div className="mt-[15px] lg:mt-[20px] _text_20_30">
