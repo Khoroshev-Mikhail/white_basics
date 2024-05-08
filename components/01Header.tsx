@@ -16,7 +16,7 @@ export default function Header(){
     useEffect(() => {
         const handleScroll = () => {
             const currentPosition = window.scrollY;
-            setShowButton(currentPosition > scrollPosition);
+            setShowButton(currentPosition < scrollPosition);
             setScrollPosition(currentPosition);
         };
 
@@ -77,7 +77,7 @@ export default function Header(){
         <>
             {/* Выпадающая менюшка */}
             <div className={`${isHidden ? 'hidden' : 'block'} md:!hidden fixed z-50 top-0 left-0 w-full min-h-screen max-h-screen bg-white flex flex-col justify-center`}>
-                <Image fetchPriority="high" className="fixed top-[15px] right-[20px] cursor-pointer " src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
+                <Image fetchPriority="high" className="fixed z-50 top-[15px] right-[40px] cursor-pointer " src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
                     <div className="relative py-10 sm:py-10 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
                         <menu className={`uppercase block md:w-1/2 w-full relative z-50 text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] mt-10 text-black`}>
                             <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#About">About</a></li>
@@ -87,6 +87,9 @@ export default function Header(){
                                 <Social />
                             </li>
                         </menu>
+                        <div>
+                            <a className={`block text-center mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] cursor-pointer uppercase rounded-[100px] bg-[#FFFFFF] border-[1px] border-black hover:bg-[#F1F1F1] hover:shadow-inner text-[16px] md:text-[18px] text-[#303030]`}>Buy</a>
+                        </div>
                     </div>
             </div> 
 
@@ -132,7 +135,7 @@ export default function Header(){
             <div className={`pt-[${height}px] relative -z-50 min-h-screen`}></div>
 
             {showButton &&
-                <div className="fixed z-50 w-full flex justify-center left-0 bottom-[15%] md:bottom-[5%] _opacity_animation">
+                <div className="fixed z-40 w-full flex justify-center left-0 bottom-[10%] md:bottom-[5%] _opacity_animation">
                     <a className={`block mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] cursor-pointer uppercase rounded-[100px] bg-[#FFFFFF] border-[1px] border-black hover:bg-[#F1F1F1] hover:shadow-inner text-[16px] md:text-[18px] text-[#303030]`}>Buy</a>
                 </div>
             }
