@@ -19,14 +19,19 @@ export default function About(){
             </div>
             
             <div ref={text} className="_wrapper relative z-30">
-                <div className="flex flex-col mx-auto md:w-2/3 lg:w-1/2 [&>div]:text-center tracking-tight leading-tight">
+                <div className="flex flex-col mx-auto w-full [&>div]:text-center tracking-tight leading-tight">
                     <h2 className="_h2 text-center">
                         About
                     </h2>
-                    <div className=" mt-5 md:mt-7.5 _text_14_18 flex flex-col justify-between leading-normal">
-                        <div>White Basics is a unique opportunity to have multiple coins in your crypto wallet by having only one coin.</div>
-                        <div>Use our white sheet of paper to visualize your favorite pet, artist, politician, or draw your own logo on it.</div>
-                        <div>It is your figment of imagination that completes the White Basics’ concept.</div>
+                    <div className='flex justify-around mt-5 md:mt-7.5'>
+                        <div className='w-1/2'>
+                            <iframe className='w-full' width="560" height="315" src="https://www.youtube.com/embed/8VvfMv9mLjo?si=darb_ATYwf3N_uR7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div className="w-1/2 _text_14_18  leading-normal flex flex-col justify-center">
+                            <div className=''>White Basics is a unique opportunity to have multiple coins in your crypto wallet by having only one coin.<br/>
+                                Use our white sheet of paper to visualize your favorite pet, artist, politician, or draw your own logo on it.<br/>
+                                It is your figment of imagination that completes the White Basics’ concept.</div>
+                            </div>
                     </div>
                     <div className="_text_18_30 font-medium mt-[12.5%] xs:mt-[10%] md:mt-[7%]">
                         This way we are uniting each and every coin that has ever been or will be created.
