@@ -3,8 +3,8 @@ import Image from "next/image";
 import Social from "@/components/00Social";
 import burger from "../public/img/01Header/burger.svg"
 import cross from "../public/img/01Header/cross.svg"
-import main from "../public/img/01Header/main.mp4"
-import main_mobile from "../public/img/01Header/main_mobile.mp4"
+import main from "../public/img/01Header/main.MP4"
+import main_mobile from "../public/img/01Header/main_mobile.MP4"
 
 export default function Header(){
     const [showButton, setShowButton] = useState<boolean>(false);
