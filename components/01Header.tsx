@@ -12,12 +12,31 @@ export default function Header(){
     const [activeSection, setActiveSection] = useState<number | null>(null);
     const [isHidden, setIsHidden] = useState(true);
     const [height, setHeight] = useState<number>()
+    const [bottomButtonPosition, setBottonButtonPosition] = useState<number>(123)
+
+    useEffect(()=>{
+        const bottom_button = document.getElementById('bottom_button');
+        const documentTop = window.scrollY || document.documentElement.scrollTop;
+        if(bottom_button){
+            const blockBottom = bottom_button.getBoundingClientRect().bottom + documentTop;
+            const distanceFromBodyBottomToBlockBottom = document.body.offsetHeight - blockBottom;
+            setBottonButtonPosition(distanceFromBodyBottomToBlockBottom)
+        }
+    }, [])
 
     useEffect(() => {
         const handleScroll = () => {
             const currentPosition = window.scrollY;
             setShowButton(currentPosition < scrollPosition);
             setScrollPosition(currentPosition);
+            // if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
+            //     setShowButton(true)
+            // }
+            const currentPositionBottom = document.body.offsetHeight - window.scrollY - window.innerHeight
+            if(currentPositionBottom < (bottomButtonPosition - window.innerHeight * 0.1)){
+                console.log(currentPositionBottom, bottomButtonPosition)
+                setShowButton(false)
+            }
         };
 
         window.addEventListener('scroll', handleScroll);

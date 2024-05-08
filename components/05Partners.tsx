@@ -6,8 +6,10 @@ import partner_4 from "../public/img/05Partners/4.webp"
 import partner_5 from "../public/img/05Partners/5.webp"
 import partner_6 from "../public/img/05Partners/6.webp"
 import Social from './00Social'
+import { useEffect } from 'react'
 
 export default function Partners(){
+
     return(
         <section id="Partners" className="_section pt-[30px] md:pt-[60px] bg-white relative z-30">
             <div className="_wrapper">
@@ -39,8 +41,9 @@ export default function Partners(){
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className='mt-[30px] md:hidden flex flex-col justify-center w-full'>
-                    <a className="block mx-auto px-[35px] py-[15px] uppercase rounded-[100px] bg-[#303030] text-[16px] text-white ">Buy</a>
+                    <a id="bottom_button" className="block mx-auto px-[35px] py-[15px] uppercase rounded-[100px] bg-[#303030] text-[16px] text-white ">Buy</a>
                 </div>
+
                 <div className='mt-[50px] md:hidden flex justify-center'>
                     <Social />
                 </div>
