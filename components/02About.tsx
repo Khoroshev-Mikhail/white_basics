@@ -25,7 +25,7 @@ export default function About(){
                     </h2>
                     <div className='flex justify-around mt-5 md:mt-7.5'>
                         <div className='w-1/2'>
-                            <iframe className='w-full' width="560" height="315" src="https://www.youtube.com/embed/8VvfMv9mLjo?si=darb_ATYwf3N_uR7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            {/* <iframe className='w-full' width="560" height="315" src="https://www.youtube.com/embed/8VvfMv9mLjo?si=darb_ATYwf3N_uR7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
                         </div>
                         <div className="w-1/2 _text_14_18  leading-normal flex flex-col justify-center">
                             <div className=''>White Basics is a unique opportunity to have multiple coins in your crypto wallet by having only one coin.<br/>

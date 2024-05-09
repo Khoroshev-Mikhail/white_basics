@@ -13,21 +13,21 @@ export default function Header(){
     const [isHidden, setIsHidden] = useState(true);
     const [height, setHeight] = useState<number>()
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentPosition = window.scrollY;
-            setShowButton(currentPosition < scrollPosition);
-            setScrollPosition(currentPosition);
-            if(document.body.offsetHeight - window.scrollY - window.innerHeight <= 60){
-                setShowButton(false)
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const currentPosition = window.scrollY;
+    //         setShowButton(currentPosition < scrollPosition);
+    //         setScrollPosition(currentPosition);
+    //         if(document.body.offsetHeight - window.scrollY - window.innerHeight <= 60){
+    //             setShowButton(false)
+    //         }
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [scrollPosition]);
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, [scrollPosition]);
 
     useEffect(() => {
         const video = document.querySelector("video");
@@ -54,10 +54,7 @@ export default function Header(){
 
     useEffect(()=>{
         setHeight(document.getElementById('Header')?.offsetHeight)
-        // console.log(main)
     }, [])
-
-
 
     useEffect(() => {
         const handleScroll = () => {
@@ -131,17 +128,18 @@ export default function Header(){
                             <source src={main_mobile} type="video/mp4"/>
                         </video>
                     </div>
+                    {/* {showButton &&
+                        <div className="abosolute z-40 w-full flex justify-center left-0 bottom-[10%] md:bottom-[5%] _opacity_animation">
+                            <a className={`block mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] cursor-pointer uppercase rounded-[100px] bg-[#FFFFFF] border-[1px] border-black hover:bg-[#F1F1F1] hover:shadow-inner text-[16px] md:text-[18px] text-[#303030]`}>Buy</a>
+                        </div>
+                    } */}
                 </div>
             </section>
             
             {/* Заглушка с отступом для секции с видео */}
             <div className={`pt-[${height}px] relative -z-50 min-h-screen`}></div>
 
-            {showButton &&
-                <div className="fixed z-40 w-full flex justify-center left-0 bottom-[10%] md:bottom-[5%] _opacity_animation">
-                    <a className={`block mx-auto px-[34px] py-[15px] md:px-[62px] md:py-[20px] cursor-pointer uppercase rounded-[100px] bg-[#FFFFFF] border-[1px] border-black hover:bg-[#F1F1F1] hover:shadow-inner text-[16px] md:text-[18px] text-[#303030]`}>Buy</a>
-                </div>
-            }
+            
         </>
     )
 }
