@@ -14,6 +14,7 @@ export default function Partners(){
     const [buttonPosition, setButtonPosition] = useState<number>(100) //расстояние от низа сайта до нижнего края кнопки при первом ренедеринге
     const [buttonHeight, setButtonHeight] = useState<number>(54)
     const [viewportPosition, setViewportPosition] = useState<number>(0) //расстоние от низа сайта до низа вьюпорта + расстояние от низ вьюпорта до низа кнопки при фикс боттом-10%
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     //Получаем позицию низа экрана от низа документа
     useEffect(()=>{
@@ -22,14 +23,10 @@ export default function Partners(){
             const vieportPosition = window.scrollY
             const viewportHeight = window.innerHeight
             const vieportBottomPosition = siteHeight - vieportPosition - viewportHeight
-
             setViewportPosition(vieportBottomPosition)
-
             if(vieportBottomPosition <= 1){
-                console.log('asd')
                 setIsEndScrolling(true)
             }
-
         }
         window.addEventListener('scroll', changeIsEnding);
         return () => {
@@ -38,18 +35,24 @@ export default function Partners(){
     }, [])
 
     useEffect(()=>{
-        
+
         const siteHeight = document.body.offsetHeight
         const vieportPosition = window.scrollY
         const viewportHeight = window.innerHeight
         const vieportBottomPosition = siteHeight - vieportPosition - viewportHeight
-        console.log(isEndScrolling, 'as', (vieportBottomPosition >= buttonPosition))
-        console.log(vieportBottomPosition, buttonPosition)
-        if(isEndScrolling && (vieportBottomPosition >= buttonPosition)){
-            setIsFixed(true)
-        } else{
+        //В самом низу нужно исправить ошибку
+        if(vieportPosition < scrollPosition){
+            if(isEndScrolling && (vieportBottomPosition >= buttonPosition)){
+                setIsFixed(true)
+            } else{
+                setIsFixed(false)
+            }
+        }else{
             setIsFixed(false)
         }
+ 
+        setScrollPosition(window.scrollY)
+
     }, [isEndScrolling, viewportPosition])
 
     //Получаем расстояние от низа сайта до кнопки
@@ -95,9 +98,8 @@ export default function Partners(){
                 {/* поставить на это место заглушку при isFixed = true  */}
                 <div className={` mt-[30px] md:hidden flex justify-center w-full`}>
                     <a id="bottom_button" className={`${isFixed ? 'fixed bottom-[10%] left-1/2 translate-x-[-50%]' : ''} block mx-auto px-[35px] py-[15px] uppercase rounded-[100px] bg-[#303030] text-[16px] text-white`}>Buy</a>
-                    <div className={`w-[1px] !h-[${buttonHeight}px]`}></div>
+                    <div style={{height: buttonHeight + 'px'}} className={`w-[1px] !h-[${buttonHeight}px]`}></div>
                 </div>
-
 
                 <div className='mt-[50px] md:hidden flex justify-center'>
                     <Social />
