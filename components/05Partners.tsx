@@ -17,28 +17,40 @@ export default function Partners(){
 
     //Получаем позицию низа экрана от низа документа
     useEffect(()=>{
-        const handleScroll = () => {
+        const changeIsEnding = () => {
             const siteHeight = document.body.offsetHeight
             const vieportPosition = window.scrollY
             const viewportHeight = window.innerHeight
             const vieportBottomPosition = siteHeight - vieportPosition - viewportHeight
 
-            if(vieportBottomPosition < 1){
+            setViewportPosition(vieportBottomPosition)
+
+            if(vieportBottomPosition <= 1){
+                console.log('asd')
                 setIsEndScrolling(true)
             }
 
-            if(isEndScrolling && (vieportBottomPosition > buttonPosition)){
-                setIsFixed(true)
-            } else{
-                setIsFixed(false)
-            }
-
         }
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', changeIsEnding);
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', changeIsEnding);
         };
     }, [])
+
+    useEffect(()=>{
+        
+        const siteHeight = document.body.offsetHeight
+        const vieportPosition = window.scrollY
+        const viewportHeight = window.innerHeight
+        const vieportBottomPosition = siteHeight - vieportPosition - viewportHeight
+        console.log(isEndScrolling, 'as', (vieportBottomPosition >= buttonPosition))
+        console.log(vieportBottomPosition, buttonPosition)
+        if(isEndScrolling && (vieportBottomPosition >= buttonPosition)){
+            setIsFixed(true)
+        } else{
+            setIsFixed(false)
+        }
+    }, [isEndScrolling, viewportPosition])
 
     //Получаем расстояние от низа сайта до кнопки
     useEffect(()=>{
@@ -83,7 +95,7 @@ export default function Partners(){
                 {/* поставить на это место заглушку при isFixed = true  */}
                 <div className={` mt-[30px] md:hidden flex justify-center w-full`}>
                     <a id="bottom_button" className={`${isFixed ? 'fixed bottom-[10%] left-1/2 translate-x-[-50%]' : ''} block mx-auto px-[35px] py-[15px] uppercase rounded-[100px] bg-[#303030] text-[16px] text-white`}>Buy</a>
-                    <div className={`w-[0px] !h-[${buttonHeight}px]`}></div>
+                    <div className={`w-[1px] !h-[${buttonHeight}px]`}></div>
                 </div>
 
 
