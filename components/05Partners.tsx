@@ -66,7 +66,7 @@ export default function Partners(){
             <div className="_wrapper">
                 <div className='flex justify-between'>
                     <h2 className='_h2 block w-full md:w-2/3 leading-none'>Partners</h2>
-                    <div className='hidden md:flex md:flex-col md:justify-center w-1/3'>
+                    <div className='hidden md:flex-col md:justify-center w-1/3'>
                         <a className="block ml-auto px-[62px] py-[20px] uppercase rounded-[100px] bg-[#303030] text-[18px] text-white cursor-pointer hover:bg-[#F1F1F1] hover:shadow-xl hover:text-black">Buy</a>
                     </div>
                 </div>

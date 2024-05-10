@@ -93,14 +93,22 @@ export default function Header(){
                     </div>
             </div> 
 
+         
+
             {/* Фиксированная шапка меню */}
             <div id="menu" className="fixed z-40 top-0 px-[20px] lg:px-[40px] md:py-[20px] py-[15px]  w-full bg-[#FFFFFF] text-black">
                 <div className="_wrapper flex justify-between">
                     <div className="hidden md:flex  text-[20px] flex-col justify-center">
                         <ul className="flex gap-x-[50px]">
-                            <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 1 ? 'font-bold' : ''} w-[53px] hover:text-[#666] cursor-pointer`}><a href="#About">About</a></li>
-                            <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 2 ? 'font-bold' : ''} w-[84px] hover:text-[#666] cursor-pointer`}><a href="#Roadmap">Roadmap</a></li>
-                            <li onClick={()=>setActiveSection(3)} className={`${ activeSection === 3 ? 'font-bold' : ''} w-[105px] hover:text-[#666] cursor-pointer`}><a href="#Tokenomics">Tokenomics</a></li>
+                            <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 1 ? 'font-bold' : ''} w-[53px] hover:text-[#666] cursor-pointer`}>
+                                <a href="#About">About</a>
+                            </li>
+                            <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 2 ? 'font-bold' : ''} w-[84px] hover:text-[#666] cursor-pointer`}>
+                                <a href="#Roadmap">Roadmap</a>
+                            </li>
+                            <li onClick={()=>setActiveSection(3)} className={`${ activeSection === 3 ? 'font-bold' : ''} w-[105px] hover:text-[#666] cursor-pointer`}>
+                                <a href="#Tokenomics">Tokenomics</a>
+                            </li>
                         </ul>
                     </div>
                     <div className="flex flex-col justify-center">

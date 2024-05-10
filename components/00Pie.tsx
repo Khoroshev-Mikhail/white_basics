@@ -87,6 +87,7 @@ export default function Pie() {
     series.labels.template.text = "{category} {value.title}";
     series.slices.template.tooltipPosition = "pointer";
     series.slices.template.showTooltipOn = 'hover';
+    series.slices.template.tooltipText = "{category}: {value.percent.formatNumber('#.0')}%";
 
     if(window.innerWidth <= 767){
         series.slices.template.showTooltipOn = 'hit';
