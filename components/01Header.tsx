@@ -12,6 +12,7 @@ export default function Header(){
     const [activeSection, setActiveSection] = useState<number | null>(null);
     const [isHidden, setIsHidden] = useState(true);
     const [height, setHeight] = useState<number>()
+    const [isMobile, setIsMobile] = useState<boolean>(true)
 
     // useEffect(() => {
     //     const handleScroll = () => {
@@ -28,6 +29,20 @@ export default function Header(){
     //         window.removeEventListener('scroll', handleScroll);
     //     };
     // }, [scrollPosition]);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if(window.innerWidth <= 767){
+                setIsMobile(true)
+            } else{
+                setIsMobile(false)
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []); 
 
     useEffect(() => {
         const video = document.querySelector("video");
@@ -138,7 +153,7 @@ export default function Header(){
                         <video autoPlay muted playsInline className="block object-cover w-full md:w-2/3 md:mx-auto md:h-full  max-w-full rounded-[10px]" >
                             <source src={main} type="video/mp4" media="(min-width: 768px)"/>
                             <source src={main_mobile} type="video/mp4"  media="(max-width: 767px)"/>
-                            {/* <source src={main} type="video/mp4"/> */}
+                            <source src={isMobile ? main_mobile : main} type="video/mp4"/>
                         </video>
                     </div>
                     {/* {showButton &&
