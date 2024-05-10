@@ -80,10 +80,10 @@ export default function Header(){
                 <Image fetchPriority="high" className="fixed z-50 top-[15px] right-[40px] cursor-pointer " src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
                     <div className="relative py-10 sm:py-10 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
                         <menu className={`uppercase block md:w-1/2 w-full relative z-50 text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] mt-10 text-black`}>
-                            <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#About">About</a></li>
-                            <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#Tokenomics">Tokemomics</a></li>
-                            <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#Partners">Partners</a></li>
-                            <li  onClick={()=> setIsHidden(true) }  className="flex justify-center md:justify-start w-full mt-3 md:mt-5  py-[60px] xl:py-[100px] ">
+                            <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#About">About</a></li>
+                            <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#Tokenomics">Tokemomics</a></li>
+                            <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#Partners">Partners</a></li>
+                            <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5  py-[60px] xl:py-[100px] ">
                                 <Social />
                             </li>
                         </menu>
@@ -94,17 +94,22 @@ export default function Header(){
             </div> 
 
             {/* Фиксированная шапка меню */}
-            <div id="menu" className="fixed z-40 top-0 px-[20px] md:px-[40px] md:py-[20px] py-[15px]  w-full bg-[#FFFFFF] text-black">
+            <div id="menu" className="fixed z-40 top-0 px-[20px] lg:px-[40px] md:py-[20px] py-[15px]  w-full bg-[#FFFFFF] text-black">
                 <div className="_wrapper flex justify-between">
-                    <div className="hidden md:block  text-[20px]">
+                    <div className="hidden md:flex  text-[20px] flex-col justify-center">
                         <ul className="flex gap-x-[50px]">
-                            <li onClick={()=>setActiveSection(0)} className={`${ activeSection === 1 ? 'font-bold' : ''} hover:text-[#666] cursor-pointer`}><a href="#About">About</a></li>
-                            <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 2 ? 'font-bold' : ''} hover:text-[#666] cursor-pointer`}><a href="#Roadmap">Roadmap</a></li>
-                            <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 3 ? 'font-bold' : ''} hover:text-[#666] cursor-pointer`}><a href="#Tokenomics">Tokenomics</a></li>
+                            <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 1 ? 'font-bold' : ''} w-[53px] hover:text-[#666] cursor-pointer`}><a href="#About">About</a></li>
+                            <li onClick={()=>setActiveSection(2)} className={`${ activeSection === 2 ? 'font-bold' : ''} w-[84px] hover:text-[#666] cursor-pointer`}><a href="#Roadmap">Roadmap</a></li>
+                            <li onClick={()=>setActiveSection(3)} className={`${ activeSection === 3 ? 'font-bold' : ''} w-[105px] hover:text-[#666] cursor-pointer`}><a href="#Tokenomics">Tokenomics</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col justify-center">
-                        <Social />
+                        <div className="flex gap-x-5 md:gap-x-10">
+                            <a className={`hidden md:block mx-auto px-[34px] py-[10px] lg:px-[62px] md:py-[15px] cursor-pointer uppercase rounded-[100px] bg-[#303030] border-[1px] border-black hover:bg-[#FFFFFF] hover:shadow-inner hover:text-[#303030] text-[16px] md:text-[18px] text-[#f1f1f1]`} href="">Buy</a>
+                            <div className="flex flex-col justify-center">
+                                <Social />
+                            </div>
+                        </div>
                     </div>
                     <div className="md:hidden flex flex-col justify-center" onClick={()=> setIsHidden(false) }>
                         <Image src={burger} alt="menu" />
@@ -124,8 +129,8 @@ export default function Header(){
                     <div className={`relative z-20 w-full md:w-[2/3] h-full px-2 overflow-hidden flex flex-col justify-center rounded-[10px]`}>
                         <video autoPlay muted playsInline className="block object-cover w-full md:w-2/3 md:mx-auto md:h-full  max-w-full rounded-[10px]" >
                             <source src={main} type="video/mp4" media="(min-width: 768px)"/>
-                            {/* <source src="/img/01Header/main.mp4" type="video/mp4" media="(min-width: 768px)"/> */}
-                            <source src={main_mobile} type="video/mp4"/>
+                            <source src={main_mobile} type="video/mp4"  media="(max-width: 767px)"/>
+                            <source src={main} type="video/mp4"/>
                         </video>
                     </div>
                     {/* {showButton &&
