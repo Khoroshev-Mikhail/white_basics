@@ -14,7 +14,6 @@ export default function Partners(){
     const [buttonPosition, setButtonPosition] = useState<number>(100)
     const [buttonHeight, setButtonHeight] = useState<number>(54)
     const [viewportPosition, setViewportPosition] = useState<number>(0) 
-    const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(()=>{
         const changeIsEnding = () => {
@@ -38,13 +37,12 @@ export default function Partners(){
         const vieportPosition = window.scrollY
         const viewportHeight = window.innerHeight
         const vieportBottomPosition = siteHeight - vieportPosition - viewportHeight
+
         if(isEndScrolling && (vieportBottomPosition >= buttonPosition)){
             setIsFixed(true)
         } else{
             setIsFixed(false)
         }
- 
-        setScrollPosition(window.scrollY)
 
     }, [isEndScrolling, viewportPosition])
 
