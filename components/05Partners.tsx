@@ -50,7 +50,7 @@ export default function Partners(){
         const button = document.getElementById('bottom_button')
         if(button){
             const buttonPosition = document.body.offsetHeight - button.getBoundingClientRect().y - button.offsetHeight - (window.innerHeight * 0.1)
-            setButtonPosition(buttonPosition)
+            setButtonPosition(buttonPosition < 300 ? buttonPosition : 155)
             setButtonHeight(button.offsetHeight)
         }
     }, [])
