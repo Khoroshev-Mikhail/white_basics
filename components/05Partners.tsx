@@ -9,14 +9,13 @@ import Social from './00Social'
 import { useEffect, useState } from 'react'
 
 export default function Partners(){
-    const [isFixed, setIsFixed] = useState<boolean>(false) //toggle для переключения класса позиционирования кнопки fixed/static
-    const [isEndScrolling, setIsEndScrolling] = useState<boolean>(false) //проскроллил ли юзер до конца сайта или до видимости кнопки
-    const [buttonPosition, setButtonPosition] = useState<number>(100) //расстояние от низа сайта до нижнего края кнопки при первом ренедеринге
+    const [isFixed, setIsFixed] = useState<boolean>(false)
+    const [isEndScrolling, setIsEndScrolling] = useState<boolean>(false)
+    const [buttonPosition, setButtonPosition] = useState<number>(100)
     const [buttonHeight, setButtonHeight] = useState<number>(54)
-    const [viewportPosition, setViewportPosition] = useState<number>(0) //расстоние от низа сайта до низа вьюпорта + расстояние от низ вьюпорта до низа кнопки при фикс боттом-10%
+    const [viewportPosition, setViewportPosition] = useState<number>(0) 
     const [scrollPosition, setScrollPosition] = useState(0);
 
-    //Получаем позицию низа экрана от низа документа
     useEffect(()=>{
         const changeIsEnding = () => {
             const siteHeight = document.body.offsetHeight
@@ -35,7 +34,6 @@ export default function Partners(){
     }, [])
 
     useEffect(()=>{
-
         const siteHeight = document.body.offsetHeight
         const vieportPosition = window.scrollY
         const viewportHeight = window.innerHeight
@@ -50,7 +48,6 @@ export default function Partners(){
 
     }, [isEndScrolling, viewportPosition])
 
-    //Получаем расстояние от низа сайта до кнопки
     useEffect(()=>{
         const button = document.getElementById('bottom_button')
         if(button){
@@ -59,7 +56,6 @@ export default function Partners(){
             setButtonHeight(button.offsetHeight)
         }
     }, [])
-
 
     return(
         <section id="Partners" className="_section pt-[30px] md:pt-[60px] bg-white relative z-30">
@@ -103,9 +99,3 @@ export default function Partners(){
         </section>
     )
 }
-//Как только экран пользователя касается низа сайта, кнопка может перемещаться наверх и становится фиксированной
-//Но фиксация на боттом-10%
-//А при при первом появлении кнопки она на произвольном расстоянии от низа (в зависимости от верстки).
-// var buttonStartingPosition Поэтому нужно найти расстояние от низа сайта до нижнего края кнопки.
-// var viewportPosition И разрешать ей перемешаться только когда расстоние от низа сайта до низа вьюпорта + расстояние от низ вьюпорта до низа кнопки при фикс боттом-10% больше чем 
-// тоесть когда viewportPosition > buttonStartingPosition, если меньше тогда у нее обычная позиция. 
