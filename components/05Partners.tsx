@@ -40,14 +40,9 @@ export default function Partners(){
         const vieportPosition = window.scrollY
         const viewportHeight = window.innerHeight
         const vieportBottomPosition = siteHeight - vieportPosition - viewportHeight
-        //В самом низу нужно исправить ошибку
-        if(vieportPosition < scrollPosition){
-            if(isEndScrolling && (vieportBottomPosition >= buttonPosition)){
-                setIsFixed(true)
-            } else{
-                setIsFixed(false)
-            }
-        }else{
+        if(isEndScrolling && (vieportBottomPosition >= buttonPosition)){
+            setIsFixed(true)
+        } else{
             setIsFixed(false)
         }
  
