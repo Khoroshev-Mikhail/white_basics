@@ -18,7 +18,7 @@ export default function About(){
                 <Image fetchPriority="high" className="md:hidden w-full h-full rounded-[10px] bg-cover bg-center bg-no-repeat" src={bg_mobile} alt=''/>
             </div>
             
-            <div ref={text} className="_wrapper relative z-30 h-full w-full">
+            <div ref={text} className="_wrapper relative z-30 h-full w-full p-5">
                 <div className='grid grid-cols-1 md:grid-cols-2'>
                     <div className='order-last md:order-first flex flex-col justify-center'>
                         <div className='bg-black aspect-square rounded-[10px] flex flex-col justify-center'>

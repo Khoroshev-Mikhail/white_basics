@@ -96,7 +96,7 @@ export default function Header(){
          
 
             {/* Фиксированная шапка меню */}
-            <div id="menu" className="fixed z-40 top-0 px-[20px] lg:px-[40px] md:py-[20px] py-[15px]  w-full bg-[#FFFFFF] text-black">
+            <div id="menu" className="fixed z-40 top-0 px-[20px] lg:px-[40px] py-[10px]  w-full bg-[#FFFFFF] text-black">
                 <div className="_wrapper flex justify-between">
                     <div className="hidden md:flex  text-[20px] flex-col justify-center">
                         <ul className="flex gap-x-[50px]">
@@ -113,7 +113,7 @@ export default function Header(){
                     </div>
                     <div className="flex flex-col justify-center">
                         <div className="flex gap-x-5 md:gap-x-10">
-                            <a className={`hidden md:block mx-auto px-[34px] py-[10px] lg:px-[62px] md:py-[15px] cursor-pointer uppercase rounded-[100px] bg-[#303030] border-[1px] border-black hover:bg-[#FFFFFF] hover:shadow-inner hover:text-[#303030] text-[16px] md:text-[18px] text-[#f1f1f1]`} href="">Buy</a>
+                            <a className={`hidden md:block mx-auto px-[34px] py-[10px] lg:px-[45px] md:py-[10px] cursor-pointer uppercase rounded-[100px] bg-[#303030] border-[1px] border-black hover:bg-[#FFFFFF] hover:shadow-inner hover:text-[#303030] text-[16px] md:text-[18px] text-[#f1f1f1]`} href="">Buy</a>
                             <div className="flex flex-col justify-center">
                                 <Social />
                             </div>
