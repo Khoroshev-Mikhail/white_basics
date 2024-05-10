@@ -138,7 +138,7 @@ export default function Header(){
                         <video autoPlay muted playsInline className="block object-cover w-full md:w-2/3 md:mx-auto md:h-full  max-w-full rounded-[10px]" >
                             <source src={main} type="video/mp4" media="(min-width: 768px)"/>
                             <source src={main_mobile} type="video/mp4"  media="(max-width: 767px)"/>
-                            <source src={main} type="video/mp4"/>
+                            {/* <source src={main} type="video/mp4"/> */}
                         </video>
                     </div>
                     {/* {showButton &&
