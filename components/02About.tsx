@@ -19,9 +19,11 @@ export default function About(){
             </div>
             
             <div ref={text} className="_wrapper relative z-30 h-full w-full">
-                <div className='flex flex-col justify-between md:flex-row'>
-                    <div className='bg-black aspect-square rounded-[10px] order-last md:order-first'>
-
+                <div className='grid grid-cols-1 md:grid-cols-2'>
+                    <div className='order-last md:order-first flex flex-col justify-center'>
+                        <div className='bg-black aspect-square rounded-[10px] flex flex-col justify-center'>
+                            <iframe width={'100%'} height={'auto'} className='aspect-video' src="https://www.youtube.com/embed/8VvfMv9mLjo?si=oXLQyZoiE-j8o-LC" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+                        </div>
                     </div>
                     <div className="flex flex-col justify-around w-[80%] py-[60px] mx-auto [&>div]:text-center tracking-tight leading-tight">
                         <h2 className="_h2 text-center">
