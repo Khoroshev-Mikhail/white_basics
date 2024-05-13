@@ -13,7 +13,7 @@ export default function Tokenomics(){
             <div id="Tokenomics" className="_wrapper">
                 <div className="py-[30px] md:py-[60px]">
                     <h2 className="_h2 text-center">Tokenomics</h2>
-                    <div className=' px-5'>
+                    <div className=' px-2'>
                         <Pie />
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="2000" className='w-full overflow-hidden mt-[5%] px-5 text-center font-medium cursor-pointer '>
