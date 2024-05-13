@@ -89,13 +89,122 @@ export default function Pie() {
     series.slices.template.showTooltipOn = 'hover';
     series.slices.template.tooltipText = "{category}: {value.percent.formatNumber('#.0')}%";
 
+
+    
+
     if(window.innerWidth <= 767){
         series.slices.template.showTooltipOn = 'hit';
         chart.depth = 30;
-        series.labels.template.disabled = true;
-        series.ticks.template.disabled = true;
+        // series.labels.template.disabled = true;
+        // series.ticks.template.disabled = true;
+        // series.alignLabels = false;
+        series.labels.template.text = "{category}";
+        series.labels.template.fill = am4core.color("white");
+        series.labels.template.fontSize = 10;
+        series.alignLabels = false
+        series.labels.template.adapter.add("dx", function(dx, target) {
+          if (target.dataItem) {
+              var index = target.dataItem.index;
+              switch (index) {
+                  case 0:
+                      return 0;
+                  case 1:
+                    return 10;
+                  case 2:
+                    return 0;
+                  case 3:
+                      return 0;
+                  case 4:
+                      return 20;
+                  case 5:
+                      return 0;
+                  case 6:
+                      return 0;
+                  case 7:
+                      return 10;
+                  case 8:
+                    return -20;
+                  case 9:
+                      return -10;
+                  case 10:
+                      return 0;
+                  default:
+                      return 0;
+              }
+          }
+          return dx; // Возвращаем исходное значение для всех остальных меток
+        });
+        series.labels.template.adapter.add("dy", function(dy, target) {
+          if (target.dataItem) {
+              var index = target.dataItem.index;
+              switch (index) {
+                  case 0:
+                      return -20;
+                  case 1:
+                    return -10;
+                  case 2:
+                    return -10;
+                  case 3:
+                      return 15;
+                  case 4:
+                      return 25;
+                  case 5:
+                      return 30;
+                  case 6:
+                      return 40;
+                  case 7:
+                      return 20;
+                  case 8:
+                    return 0;
+                  case 9:
+                      return -20;
+                  case 10:
+                      return -15;
+                  default:
+                      return 0;
+              }
+          }
+          return dy; // Возвращаем исходное значение для всех остальных меток
+        });
+        series.labels.template.adapter.add("radius", function(radius, target) {
+          if (target.dataItem) {
+              var index = target.dataItem.index;
+              switch (index) {
+                  case 0:
+                      return 40;
+                  case 1:
+                    return 20;
+                  case 2:
+                    return 20;
+                  case 3:
+                      return 40;
+                  case 4:
+                      return 50;
+                  case 5:
+                      return 60;
+                  case 6:
+                      return 80;
+                  case 7:
+                      return 60;
+                  case 8:
+                    return 0;
+                  case 9:
+                      return 0;
+                  case 10:
+                      return 20;
+                  default:
+                      return 0;
+              }
+          }
+          return radius; // Возвращаем исходное значение для всех остальных меток
+        });
+        
+        series.labels.template.adapter.add("fill", function(color, target) {
+          return am4core.color("#000");
+        });
     }
   }, [])
+  
   useEffect(()=>{
       const elementsWithAriaLabelledby = document.querySelectorAll('[aria-labelledby]');
       elementsWithAriaLabelledby.forEach(element => {

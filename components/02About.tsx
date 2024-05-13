@@ -4,28 +4,32 @@ import bg_mobile from '../public/img/02About/bg_mobile.webp'
 import Image from 'next/image';
 
 export default function About(){
-    const { ref: bg_ref } = useParallax<HTMLDivElement>({ 
-    });
     const { ref: text  } = useParallax<HTMLDivElement>({ 
-        opacity: [1, 0],
-        easing: [1, 0, 0.8, 1],
+        // opacity: [1, 0],
+        // easing: [1, 0, 0.8, 1],
     });
 
     return(
-        <section  ref={bg_ref} id="About" className="relative z-30 min-h-screen _section flex flex-col justify-center bg-white">
-            <div className='absolute top-0 left-0 z-20 w-full h-full px-2 p-b'>
+        <section id="About" className="relative z-30 py-[5%] _section flex flex-col justify-center bg-white">
+            {/* <div className='absolute top-0 left-0 z-20 w-full h-full px-2 p-b'>
                 <Image fetchPriority="high" className="hidden md:block w-full h-full rounded-[10px] bg-cover bg-center bg-no-repeat" src={bg} alt=''/>
                 <Image fetchPriority="high" className="md:hidden w-full h-full rounded-[10px] bg-cover bg-center bg-no-repeat" src={bg_mobile} alt=''/>
-            </div>
-            
-            <div ref={text} className="_wrapper relative z-30 h-full w-full p-5">
-                <div className='grid grid-cols-1 md:grid-cols-2'>
-                    <div className='order-last md:order-first flex flex-col justify-center'>
-                        <div className='bg-black aspect-square rounded-[10px] flex flex-col justify-center'>
-                            <iframe width={'100%'} height={'auto'} className='aspect-video' src="https://www.youtube.com/embed/8VvfMv9mLjo?si=oXLQyZoiE-j8o-LC" allowFullScreen />
-                        </div>
+            </div> */}
+            {/* <div className='absolute -top-4 left-0 z-20 w-full h-2 px-2  flex justify-between'>
+                <div className='w-2 h-2 bg-white'>
+                    <div className='w-2 h-full bg-black rounded-bl-[10px]'>
                     </div>
-                    <div className="flex flex-col justify-around w-[80%] py-[60px] mx-auto [&>div]:text-center tracking-tight leading-tight">
+                </div>
+                <div className='w-2 h-2 bg-white'>
+                    <div className='w-2 h-full bg-black rounded-br-[10px]'>
+                    </div>
+                </div>
+            </div> */}
+            
+            <div ref={text} className="_wrapper relative z-30 h-full w-full">
+                <div className='flex flex-col md:flex-row justify-between h-full w-full md:gap-x-10 gap-y-5'>
+
+                    <div className="w-full md:w-1/2 bg-[#F5F5F5] flex flex-col justify-around px-2 md:px-5 lg:px-[5%] py-5 md:py-[60px] rounded-[10px] mx-auto [&>div]:text-center tracking-tight leading-tight">
                         <h2 className="_h2 text-center">
                             About
                         </h2>
@@ -38,6 +42,13 @@ export default function About(){
                             This way we are uniting each and every coin that has ever been or will be created.
                         </div>
                     </div>
+
+                    <div className='w-full md:w-1/2 bg-[#F5F5F5] order-last flex flex-col justify-center h-auto rounded-[10px]'>
+                        <div className='rounded-[10px] flex flex-col justify-center'>
+                            <iframe width={'100%'} height={'auto'} className='aspect-video' src="https://www.youtube.com/embed/8VvfMv9mLjo?si=oXLQyZoiE-j8o-LC" allowFullScreen />
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

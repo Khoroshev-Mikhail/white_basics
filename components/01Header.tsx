@@ -14,22 +14,6 @@ export default function Header(){
     const [height, setHeight] = useState<number>()
     const [isMobile, setIsMobile] = useState<boolean>(true)
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const currentPosition = window.scrollY;
-    //         setShowButton(currentPosition < scrollPosition);
-    //         setScrollPosition(currentPosition);
-    //         if(document.body.offsetHeight - window.scrollY - window.innerHeight <= 60){
-    //             setShowButton(false)
-    //         }
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, [scrollPosition]);
-
     useEffect(() => {
         const handleResize = () => {
             if(window.innerWidth <= 767){
@@ -81,6 +65,7 @@ export default function Header(){
                     setActiveSection(index);
                 }
             });
+            setScrollPosition(window.scrollY)
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -98,6 +83,7 @@ export default function Header(){
                             <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#About">About</a></li>
                             <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#Tokenomics">Tokemomics</a></li>
                             <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#Partners">Partners</a></li>
+                            <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="">White Papper</a></li>
                             <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5  py-[60px] xl:py-[100px] ">
                                 <Social />
                             </li>
@@ -111,8 +97,8 @@ export default function Header(){
          
 
             {/* Фиксированная шапка меню */}
-            <div id="menu" className="fixed z-40 top-0 px-[20px] lg:px-[40px] py-[15px] md:py-[10px]  w-full bg-[#FFFFFF] text-black">
-                <div className="_wrapper flex justify-between">
+            <div id="menu" className="fixed z-40 top-0 md:px-[20px] lg:px-[40px] py-[5px] md:py-[10px]  w-full bg-[#FFFFFF] text-black">
+                <div className="_wrapper flex justify-between !px-2">
                     <div className="hidden md:flex  text-[20px] flex-col justify-center">
                         <ul className="flex gap-x-[50px]">
                             <li onClick={()=>setActiveSection(1)} className={`${ activeSection === 1 ? 'font-bold' : ''} w-[53px] hover:text-[#666] cursor-pointer`}>
@@ -126,9 +112,9 @@ export default function Header(){
                             </li>
                         </ul>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <div className="flex gap-x-5 md:gap-x-10">
-                            <a className={`hidden md:block mx-auto px-[34px] py-[10px] lg:px-[45px] md:py-[10px] cursor-pointer uppercase rounded-[100px] bg-[#303030] border-[1px] border-black hover:bg-[#FFFFFF] hover:shadow-inner hover:text-[#303030] text-[16px] md:text-[18px] text-[#f1f1f1]`} href="">Buy</a>
+                    <div className="flex flex-col justify-center w-full md:w-auto">
+                        <div className="flex gap-x-5 md:gap-x-10 w-full md:w-auto justify-between md:justify-normal">
+                            <a className={`block order-last md:order-first mr-4 md:mr-0 px-[34px] py-[10px] lg:px-[45px] md:py-[10px] cursor-pointer uppercase rounded-[100px] bg-[#303030] border-[1px] border-black hover:bg-[#FFFFFF] hover:shadow-inner hover:text-[#303030] text-[16px] md:text-[18px] text-[#f1f1f1]`} href="">Buy</a>
                             <div className="flex flex-col justify-center">
                                 <Social />
                             </div>
@@ -141,8 +127,8 @@ export default function Header(){
             </div>
 
             {/* Секция с видео (она тоже фикс) */}
-            <section id="Header" className="_section fixed top-0 z-20 min-h-svh  bg-black overflow-hidden ">
-                <div className="relative z-20 w-full h-full min-h-svh flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
+            <section id="Header" className={`_section fixed top-0 z-20 min-h-svh bg-black overflow-hidden ${scrollPosition > 2000 ? 'hidden' : ''}`}>
+                <div className="relative md:px-5  z-20 w-full h-full min-h-svh flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
                     
                     <div className="z-0 absolute w-full h-full bg-white top-0 left-0 p-2 pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
                         <div className="bg-black rounded-[10px] w-full h-full">
@@ -165,9 +151,7 @@ export default function Header(){
             </section>
             
             {/* Заглушка с отступом для секции с видео */}
-            <div className={`pt-[${height}px] relative -z-50 min-h-screen`}></div>
-
-            
+            <div style={{height: height + 'px'}} className={`relative -z-50 min-h-screen`}></div>
         </>
     )
 }

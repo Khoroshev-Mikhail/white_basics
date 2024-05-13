@@ -22,7 +22,7 @@ export default function Partners(){
             const viewportHeight = window.innerHeight
             const vieportBottomPosition = siteHeight - vieportPosition - viewportHeight
             setViewportPosition(vieportBottomPosition)
-            if(vieportBottomPosition <= 1){
+            if(vieportBottomPosition <= 50){
                 setIsEndScrolling(true)
             }
         }

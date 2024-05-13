@@ -9,7 +9,7 @@ import Footer from "@/components/06Footer";
 export default function Home() {
 
     return (
-        <main className="select-none">
+        <main className="select-none relative">
             <Header />
             <About />
             <Roadmap />
