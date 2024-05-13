@@ -87,7 +87,7 @@ export default function Partners(){
                 </div>
                 {/* поставить на это место заглушку при isFixed = true  */}
                 <div className={` mt-[30px] md:hidden flex justify-center w-full`}>
-                    <a id="bottom_button" className={`${isFixed ? 'fixed bottom-[10%] left-1/2 translate-x-[-50%]' : ''} block mx-auto px-[35px] py-[15px] uppercase rounded-[100px] bg-[#303030] text-[16px] text-white`}>Buy</a>
+                    <a id="bottom_button" className={`${isFixed ? 'fixed z-40 bottom-[10%] left-1/2 translate-x-[-50%]' : ''} block mx-auto px-[35px] py-[15px] uppercase rounded-[100px] bg-[#303030] text-[16px] text-white`}>Buy</a>
                     <div style={{height: buttonHeight + 'px'}} className={`w-[1px] !h-[${buttonHeight}px]`}></div>
                 </div>
 
