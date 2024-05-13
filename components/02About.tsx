@@ -11,18 +11,8 @@ export default function About(){
 
     return(
         <section id="About" className="relative z-30 py-[5%] _section flex flex-col justify-center bg-white">
-            {/* <div className='absolute top-0 left-0 z-20 w-full h-full px-2 p-b'>
-                <Image fetchPriority="high" className="hidden md:block w-full h-full rounded-[10px] bg-cover bg-center bg-no-repeat" src={bg} alt=''/>
-                <Image fetchPriority="high" className="md:hidden w-full h-full rounded-[10px] bg-cover bg-center bg-no-repeat" src={bg_mobile} alt=''/>
-            </div> */}
-            {/* <div className='absolute -top-4 left-0 z-20 w-full h-2 px-2  flex justify-between'>
-                <div className='w-2 h-2 bg-white'>
-                    <div className='w-2 h-full bg-black rounded-bl-[10px]'>
-                    </div>
-                </div>
-                <div className='w-2 h-2 bg-white'>
-                    <div className='w-2 h-full bg-black rounded-br-[10px]'>
-                    </div>
+            {/* <div className='absolute top-0 bg-white left-0 z-20 w-full h-4 px-2 pb-2 flex justify-between overflow-hidden'>
+                <div className='w-full h-2 bg-black rounded-bl-[10px] rounded-br-[10px]'>
                 </div>
             </div> */}
             

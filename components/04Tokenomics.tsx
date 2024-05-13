@@ -18,7 +18,7 @@ export default function Tokenomics(){
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="2000" className='w-full overflow-hidden mt-[5%] px-5 text-center font-medium cursor-pointer '>
                         Total Supply:<br/>
-                        21,000,000,000 WB
+                        <span className='text-[12px]'>21,000,000,000 WB</span>
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="2000" className='w-full overflow-hidden mt-[5%] px-5 text-center font-medium cursor-pointer ' onClick={()=>navigator.clipboard.writeText('29kUdSqYnpo1sqC6TfnkLxT7FunSm4DRBHxb3i57WnLr')}>
                         Token SOL: <Image fetchPriority="high" className='md:hidden inline w-5 h-5 pb-1' src={copy} alt='copy'/><br/>

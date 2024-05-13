@@ -100,7 +100,7 @@ export default function Pie() {
         // series.alignLabels = false;
         series.labels.template.text = "{category}";
         series.labels.template.fill = am4core.color("white");
-        series.labels.template.fontSize = 10;
+        series.labels.template.fontSize = 12;
         series.alignLabels = false
         series.labels.template.adapter.add("dx", function(dx, target) {
           if (target.dataItem) {
@@ -132,7 +132,7 @@ export default function Pie() {
                       return 0;
               }
           }
-          return dx; // Возвращаем исходное значение для всех остальных меток
+          return dx;
         });
         series.labels.template.adapter.add("dy", function(dy, target) {
           if (target.dataItem) {
@@ -164,7 +164,7 @@ export default function Pie() {
                       return 0;
               }
           }
-          return dy; // Возвращаем исходное значение для всех остальных меток
+          return dy;
         });
         series.labels.template.adapter.add("radius", function(radius, target) {
           if (target.dataItem) {
@@ -196,7 +196,7 @@ export default function Pie() {
                       return 0;
               }
           }
-          return radius; // Возвращаем исходное значение для всех остальных меток
+          return radius;
         });
         
         series.labels.template.adapter.add("fill", function(color, target) {

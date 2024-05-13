@@ -151,7 +151,18 @@ export default function Header(){
             </section>
             
             {/* Заглушка с отступом для секции с видео */}
-            <div style={{height: height + 'px'}} className={`relative -z-50 min-h-screen`}></div>
+            <div style={{height:'100vh'}} className={`relative z-30 min-h-screen`}>
+                {/* <div className='absolute bottom-0 left-0 w-full h-2 px-2  flex justify-between overflow-hidden bg-red-500'>
+                    <div className='w-2 h-2 bg-white'>
+                        <div className='w-full h-full bg-black rounded-bl-[10px]'>
+                        </div>
+                    </div>
+                    <div className='w-2 h-2 bg-white'>
+                        <div className='w-full h-full bg-black rounded-br-[10px]'>
+                        </div>
+                    </div>
+                </div> */}
+            </div>
         </>
     )
 }
