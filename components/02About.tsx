@@ -13,6 +13,7 @@ export default function About(){
         <section id="About" className="relative z-30 py-[5%] _section flex flex-col justify-center bg-white">
             {/* <div className='absolute top-0 bg-white left-0 z-20 w-full h-4 px-2 pb-2 flex justify-between overflow-hidden'>
                 <div className='w-full h-2 bg-black rounded-bl-[10px] rounded-br-[10px]'>
+
                 </div>
             </div> */}
             

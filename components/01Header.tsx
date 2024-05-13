@@ -127,10 +127,10 @@ export default function Header(){
             </div>
 
             {/* Секция с видео (она тоже фикс) */}
-            <section id="Header" className={`_section fixed top-0 z-20 min-h-svh bg-black overflow-hidden ${scrollPosition > 2000 ? 'hidden' : ''}`}>
+            <section id="Header" className={`_section fixed top-0 z-20 min-h-svh  overflow-hidden`}>
                 <div className="relative md:px-5  z-20 w-full h-full min-h-svh flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
                     
-                    <div className="z-0 absolute w-full h-full bg-white top-0 left-0 p-2 pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
+                    <div className="z-0 absolute w-full h-full bg-white top-0 left-0 p-2 pt-[46px] xs:pt-[56px] md:pt-[70px] overflow-hidden">
                         <div className="bg-black rounded-[10px] w-full h-full">
                         </div>
                     </div>
@@ -152,16 +152,6 @@ export default function Header(){
             
             {/* Заглушка с отступом для секции с видео */}
             <div style={{height:'100vh'}} className={`relative z-30 min-h-screen`}>
-                {/* <div className='absolute bottom-0 left-0 w-full h-2 px-2  flex justify-between overflow-hidden bg-red-500'>
-                    <div className='w-2 h-2 bg-white'>
-                        <div className='w-full h-full bg-black rounded-bl-[10px]'>
-                        </div>
-                    </div>
-                    <div className='w-2 h-2 bg-white'>
-                        <div className='w-full h-full bg-black rounded-br-[10px]'>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </>
     )

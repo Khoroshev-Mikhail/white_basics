@@ -8,11 +8,12 @@ html{
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE/Edge */
     user-select: none; /* Стандартный синтаксис */
+
 }
 body {
     height: 100%;
     min-width: 320px !important;
-    /* overflow: hidden; */
+    overscroll-behavior: none;
 }
 ._section {
     @apply w-full
