@@ -10,21 +10,21 @@ import phase4 from '../public/img/03Roadmap/phase4.mp4'
 export default function Roadmap(){
 
     return(
-        <section id="Roadmap" className="_section py-[30px] md:py-[60px] bg-white  relative z-30">
+        <section id="Roadmap" className="_section pt-[60px] pb-[60px] md:pb-[90px] md:pt-[90px] bg-white  relative z-30">
 
             <div className="_wrapper">
                 <h2 className="_h2">
                     Roadmap
                 </h2>
-                <div className="mt-[30px] lg:mt-[10px] grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[10px]">
+                <div className="mt-[0px] lg:mt-[10px] grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[10px]">
                     <div className="lg:order-1">
-                        <div className="mt-[30px] lg:mt-[40px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
+                        <div className="mt-[40px] lg:mt-[40px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
                             Phase 1
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] _text_20_30">
+                        <div className="mt-[22px] _text_20_30">
                             Pinksale Fairlaunch <b>21k SOL</b>
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] mb-[15px] md:pb-[20px]  _text_14_18">
+                        <div className="mt-[22px] mb-[22px] md:pb-[20px]  _text_14_18">
                             Collect 21000 SOL on Pinksale Fairlaunch to provide stable growth after DEX launch.
                         </div>
                     </div>
@@ -34,13 +34,13 @@ export default function Roadmap(){
                         </video>
                     </div>
                     <div className="lg:order-2">
-                        <div className="mt-[30px] lg:mt-[40px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
+                        <div className="mt-[40px] lg:mt-[40px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
                             Phase 2
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] _text_20_30">
+                        <div className="mt-[22px] _text_20_30">
                         Connect <b>all Memecoin communities</b>
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] mb-[15px] md:pb-[20px] _text_14_18">
+                        <div className="mt-[22px] mb-[22px] md:pb-[20px] _text_14_18">
                             By allowing our investors to visualize multiple coins on our white sheet of paper we are bringing all Memecoin communities together. 
                         </div>
                     </div>
@@ -51,13 +51,13 @@ export default function Roadmap(){
                     </div>
 
                     <div className="lg:order-5">
-                        <div className="mt-[30px] lg:mt-[100px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
+                        <div className="mt-[40px] lg:mt-[100px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
                             Phase 3
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] _text_20_30">
+                        <div className="mt-[22px] _text_20_30">
                             WB coin <b>1$</b>
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] mb-[15px] md:pb-[20px]  _text_14_18">
+                        <div className="mt-[22px] mb-[22px] md:pb-[20px]  _text_14_18">
                             Within 6 months White Basics coin reaches 1$, and our team starts to develop the safest, fastest, and cheapest Blockchain. White Basics Chain is sure to take over the Blockchain World.
                         </div>
                     </div>
@@ -69,13 +69,13 @@ export default function Roadmap(){
                     </div>
 
                     <div className="lg:order-6">
-                        <div className="mt-[30px] lg:mt-[100px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
+                        <div className="mt-[40px] lg:mt-[100px] inline-block px-[13px] lg:px-[23px] py-[8px] lg:py-[18.5px] rounded-[100px] text-[#9C9C9C] uppercase _text_12_20 bg-[#F1F1F1]">
                             Phase 4
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] _text_20_30">
+                        <div className="mt-[22px] _text_20_30">
                             <b>TOP 2</b> COINMARKETCAP
                         </div>
-                        <div className="mt-[15px] lg:mt-[20px] mb-[15px] md:pb-[20px]  _text_14_18">
+                        <div className="mt-[22px] mb-[22px] md:pb-[20px]  _text_14_18">
                             White Basics reaches the TOP 2 Coinmarketcap <br className="hidden lg:inline" />with a 441 Billion Marketcap. 
                         </div>
                     </div>

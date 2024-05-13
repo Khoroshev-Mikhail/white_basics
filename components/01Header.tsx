@@ -110,6 +110,9 @@ export default function Header(){
                             <li onClick={()=>setActiveSection(3)} className={`${ activeSection === 3 ? 'font-bold' : ''} w-[105px] hover:text-[#666] cursor-pointer`}>
                                 <a href="#Tokenomics">Tokenomics</a>
                             </li>
+                            <li className={`hover:text-[#666] cursor-pointer`}>
+                                <a href="https://docs.whitebasics.org/">White Papper</a>
+                            </li>
                         </ul>
                     </div>
                     <div className="flex flex-col justify-center w-full md:w-auto">
