@@ -97,7 +97,7 @@ export default function Header(){
          
 
             {/* Фиксированная шапка меню */}
-            <div id="menu" className="fixed z-40 top-0 md:px-[20px] lg:px-[40px] py-[5px] md:py-[10px]  w-full bg-[#FFFFFF] text-black">
+            <div id="menu" className="fixed z-40 top-0  py-[5px] md:py-[10px]  w-full bg-[#FFFFFF] text-black">
                 <div className="_wrapper flex justify-between ">
                     <div className="hidden md:flex text-[16px] lg:text-[20px] flex-col justify-center">
                         <ul className="flex gap-x-[5px] lg:gap-x-[35px] xl:gap-x-[40px]">
