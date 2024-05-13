@@ -19,7 +19,7 @@ body {
     @apply w-full
 }
 ._wrapper {
-    @apply px-3 md:px-5 max-w-[1480px] mx-auto
+    @apply px-3 md:px-20 max-w-[1480px] mx-auto
 }
 ._h2{
     @apply text-[46px] xs:text-[54px] sm:text-[62px] md:text-[70px] lg:text-[78px] xl:text-[86px] 2xl:text-[96px]
