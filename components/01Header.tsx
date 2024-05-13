@@ -114,7 +114,7 @@ export default function Header(){
                     </div>
                     <div className="flex flex-col justify-center w-full md:w-auto">
                         <div className="flex gap-x-5 md:gap-x-10 w-full md:w-auto justify-between md:justify-normal">
-                            <a className={`block order-last md:order-first mr-8 md:mr-0 px-[34px] py-[5px] lg:px-[45px] md:py-[10px] cursor-pointer uppercase rounded-[100px] bg-[#FFF] border-[1px] border-black hover:bg-[#F1F1F1] hover:shadow-inner hover:text-[#303030] text-[16px] md:text-[18px] text-[#303030]`} href="">Buy</a>
+                            <a className={`block order-last md:order-first mr-8 md:mr-0 px-[34px] py-[5px] lg:px-[45px] md:py-[10px] cursor-pointer uppercase rounded-[100px] bg-[#FFF] border-[1px] border-black hover:bg-[#303030] hover:shadow-inner hover:text-[#FFF] text-[16px] md:text-[18px] text-[#303030]`} href="">Buy</a>
                             <div className="flex flex-col justify-center">
                                 <Social />
                             </div>

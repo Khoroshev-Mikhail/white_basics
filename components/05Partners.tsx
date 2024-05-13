@@ -57,7 +57,7 @@ export default function Partners(){
     }, [])
 
     return(
-        <section id="Partners" className="_section pt-[30px] md:pt-[60px] bg-white relative z-30">
+        <section id="Partners" className="_section pt-[60px] md:pt-[60px] bg-white relative z-30">
             <div className="_wrapper">
                 <div className='flex justify-between'>
                     <h2 className='_h2 block w-full md:w-2/3 leading-none'>Partners</h2>
