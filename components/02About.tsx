@@ -17,7 +17,7 @@ export default function About(){
             <div ref={text} className="_wrapper relative z-30 h-full w-full ">
                 <div className='flex flex-col md:flex-row justify-between h-full w-full md:gap-x-10 gap-y-5'>
 
-                    <div className="w-full h-full md:w-1/2 bg-[#F5F5F5] flex flex-col justify-around px-5 md:px-5 lg:px-[5%] py-[60px] rounded-[10px] mx-auto [&>div]:text-center tracking-tight leading-tight">
+                    <div className="w-full h-full md:w-1/2 bg-[#F5F5F5] flex flex-col justify-around px-10 md:px-5 lg:px-[5%] py-[60px] rounded-[10px] mx-auto [&>div]:text-center tracking-tight leading-tight">
                         <h2 className="_h2 text-center">
                             About
                         </h2>
