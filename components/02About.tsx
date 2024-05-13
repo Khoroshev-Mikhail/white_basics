@@ -1,7 +1,4 @@
 import { useParallax } from 'react-scroll-parallax';
-import bg from '../public/img/02About/bg.webp'
-import bg_mobile from '../public/img/02About/bg_mobile.webp'
-import Image from 'next/image';
 
 export default function About(){
     const { ref: text  } = useParallax<HTMLDivElement>({ 

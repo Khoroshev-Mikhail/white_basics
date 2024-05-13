@@ -151,7 +151,7 @@ export default function Header(){
             </section>
             
             {/* Заглушка с отступом для секции с видео */}
-            <div style={{height:'100vh'}} className={`relative z-30 min-h-screen`}>
+            <div style={{height:'100vh'}} className={`relative z-30 min-h-screen h-screen`}>
             </div>
         </>
     )
