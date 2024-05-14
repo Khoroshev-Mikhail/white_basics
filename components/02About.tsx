@@ -18,7 +18,7 @@ export default function About(){
             <div ref={text} className="_wrapper relative z-30 h-full w-full ">
                 <div className='grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 h-full w-full md:gap-x-10 gap-y-5'>
 
-                    <div className="w-full h-full bg-[#F5F5F5] flex flex-col justify-around px-[100px] py-[70px] rounded-[10px] mx-auto [&>div]:text-center tracking-tight leading-tight">
+                    <div className="w-full h-full bg-[#F5F5F5] flex flex-col justify-around px-10 lg:px-[100px] py-[70px] rounded-[10px] mx-auto [&>div]:text-center tracking-tight leading-tight">
                         <h2 className="_h2 text-center">
                             About
                         </h2>
