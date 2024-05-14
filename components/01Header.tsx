@@ -12,7 +12,7 @@ export default function Header(){
     const [activeSection, setActiveSection] = useState<number | null>(null);
     const [isHidden, setIsHidden] = useState(true);
     const [height, setHeight] = useState<number>()
-    const [isMobile, setIsMobile] = useState<boolean>(true)
+    const [isMobile, setIsMobile] = useState<boolean>(false)
 
     useEffect(() => {
         const handleResize = () => {
