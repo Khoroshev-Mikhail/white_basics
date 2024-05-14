@@ -18,7 +18,7 @@ export default function About(){
             <div ref={text} className="_wrapper relative z-30 h-full w-full ">
                 <div className='grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 h-full w-full md:gap-x-10 gap-y-5'>
 
-                    <div className="w-full h-full bg-[#F5F5F5] flex flex-col justify-around px-10 md:px-5 lg:px-[5%] py-[60px] rounded-[10px] mx-auto [&>div]:text-center tracking-tight leading-tight">
+                    <div className="w-full h-full bg-[#F5F5F5] flex flex-col justify-around px-[100px] py-[70px] rounded-[10px] mx-auto [&>div]:text-center tracking-tight leading-tight">
                         <h2 className="_h2 text-center">
                             About
                         </h2>
@@ -27,7 +27,7 @@ export default function About(){
                                 Use our white sheet of paper to visualize your favorite pet, artist, politician, or draw your own logo on it.<br/>
                                 It is your figment of imagination that completes the White Basics’ concept.</div>
                             </div>
-                        <div className="_text_18_30 font-medium mt-[12.5%]">
+                        <div className="_text_18_30 font-light mt-[12.5%]">
                             This way we are uniting each and every coin that has ever been or will be created.
                         </div>
                     </div>
