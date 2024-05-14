@@ -34,7 +34,7 @@ export default function About(){
 
                     <div className='w-full bg-[#F5F5F5] order-last flex flex-col justify-center h-auto rounded-[10px]'>
                         <div className='rounded-[10px] flex flex-col justify-center'>
-                            <div className='aspect-video w-full'>
+                            <div className='aspect-video w-full h-full flex flex-col justify-center'>
                                 <ReactPlayer width={'100%'} light={poster.src} url='https://www.youtube.com/embed/8VvfMv9mLjo?si=oXLQyZoiE-j8o-LC' />
                             </div>
                             
