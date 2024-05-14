@@ -1,4 +1,10 @@
 import { useParallax } from 'react-scroll-parallax';
+import dynamic from 'next/dynamic';
+import poster from '../public/img/02About/poster.webp'
+
+const ReactPlayer = dynamic(() => import('react-player'), {
+  ssr: false
+});
 
 export default function About(){
     const { ref: text  } = useParallax<HTMLDivElement>({ 
@@ -28,7 +34,11 @@ export default function About(){
 
                     <div className='w-full bg-[#F5F5F5] order-last flex flex-col justify-center h-auto rounded-[10px]'>
                         <div className='rounded-[10px] flex flex-col justify-center'>
-                            <iframe width={'100%'} height={'auto'} className='aspect-video' src="https://www.youtube.com/embed/8VvfMv9mLjo?si=oXLQyZoiE-j8o-LC" allowFullScreen />
+                            <div className='aspect-video w-full'>
+                                <ReactPlayer width={'100%'} light={poster.src} url='https://www.youtube.com/embed/8VvfMv9mLjo?si=oXLQyZoiE-j8o-LC' />
+                            </div>
+                            
+                            {/* <iframe width={'100%'} height={'auto'} className='aspect-video' src="" allowFullScreen /> */}
                         </div>
                     </div>
 
