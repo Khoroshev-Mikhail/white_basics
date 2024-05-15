@@ -130,7 +130,7 @@ export default function Header(){
             </div>
 
             {/* Секция с видео (она тоже фикс) */}
-            <section id="Header" className={`_section fixed top-0 z-20 min-h-svh  overflow-hidden`}>
+            <section id="Header" className={`_section fixed top-0 z-20 min-h-svh max-h-svh overflow-hidden`}>
                 <div className="relative md:px-5  z-20 w-full h-full min-h-svh flex flex-col justify-center pt-[44px] xs:pt-[51px] md:pt-[70px] overflow-hidden">
                     
                     <div className="z-0 absolute w-full h-full bg-white top-0 left-0 p-2 pt-[46px] xs:pt-[56px] md:pt-[70px] overflow-hidden">
