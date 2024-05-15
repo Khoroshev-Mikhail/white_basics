@@ -62,7 +62,7 @@ export default function Roadmap(){
                         </div>
                     </div>
                     <div className="relative lg:order-7 lg:aspect-[730/430] lg:bg-black rounded-[10px]">
-                        <div className="absolute lg:hidden w-full h-full border-l-[2px] border-r-[2px] border-white z-50 box-border rounded-[10px]"></div>
+                        <div className="absolute w-full h-full border-l-[2px] border-r-[2px] border-white z-50 box-border rounded-[10px]"></div>
                         <video className="w-full h-full rounded-[10px]" loop autoPlay muted playsInline poster={phase3_poster.src}>
                             <source src={phase3} type="video/mp4" />
                         </video>

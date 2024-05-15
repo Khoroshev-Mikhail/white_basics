@@ -83,7 +83,7 @@ export default function Header(){
                             <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#About">About</a></li>
                             <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#Tokenomics">Tokemomics</a></li>
                             <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="#Partners">Partners</a></li>
-                            <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="https://docs.whitebasics.org/">White Papper</a></li>
+                            <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5 "><a href="https://docs.whitebasics.org/">White Paper</a></li>
                             <li onClick={()=> setIsHidden(true)} className="flex justify-center md:justify-start w-full mt-3 md:mt-5  py-[60px] xl:py-[100px] ">
                                 <Social />
                             </li>
@@ -111,7 +111,7 @@ export default function Header(){
                                 <a href="#Tokenomics">Tokenomics</a>
                             </li>
                             <li className={`hover:text-[#666] cursor-pointer`}>
-                                <a href="https://docs.whitebasics.org/">White Papper</a>
+                                <a href="https://docs.whitebasics.org/">White Paper</a>
                             </li>
                         </ul>
                     </div>
