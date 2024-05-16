@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Image from "next/image";
 import Social from "@/components/00Social";
 import burger from "../public/img/01Header/burger.svg"
@@ -17,19 +17,19 @@ export default function Header(){
     const [height, setHeight] = useState<number>()
     const [isMobile, setIsMobile] = useState<boolean>(false)
 
-    useEffect(() => {
-        const handleResize = () => {
-            if(window.innerWidth <= 767){
-                setIsMobile(true)
-            } else{
-                setIsMobile(false)
-            }
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []); 
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         if(window.innerWidth <= 767){
+    //             setIsMobile(true)
+    //         } else{
+    //             setIsMobile(false)
+    //         }
+    //     };
+    //     window.addEventListener('resize', handleResize);
+    //     return () => {
+    //       window.removeEventListener('resize', handleResize);
+    //     };
+    //   }, []); 
 
     useEffect(() => {
         const video = document.querySelector("video");
@@ -54,7 +54,7 @@ export default function Header(){
     }, []);
 
 
-    useEffect(()=>{
+    useLayoutEffect(()=>{
         setHeight(document.getElementById('Header')?.offsetHeight)
         const isMobile = window.matchMedia("(max-width: 767px)").matches;
         setIsMobile(isMobile)
