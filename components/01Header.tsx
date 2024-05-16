@@ -6,6 +6,9 @@ import cross from "../public/img/01Header/cross.svg"
 import main from "../public/img/01Header/main.MP4"
 import main_mobile from "../public/img/01Header/main_mobile.MP4"
 
+
+
+
 export default function Header(){
     const [showButton, setShowButton] = useState<boolean>(false);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -53,6 +56,8 @@ export default function Header(){
 
     useEffect(()=>{
         setHeight(document.getElementById('Header')?.offsetHeight)
+        const isMobile = window.matchMedia("(max-width: 767px)").matches;
+        setIsMobile(isMobile)
     }, [])
 
     useEffect(() => {
