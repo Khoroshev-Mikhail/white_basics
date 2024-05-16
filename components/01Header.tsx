@@ -6,9 +6,6 @@ import cross from "../public/img/01Header/cross.svg"
 import main from "../public/img/01Header/main.MP4"
 import main_mobile from "../public/img/01Header/main_mobile.MP4"
 
-
-
-
 export default function Header(){
     const [activeSection, setActiveSection] = useState<number | null>(null);
     const [isHidden, setIsHidden] = useState(true);
@@ -56,8 +53,6 @@ export default function Header(){
                         </div>
                     </div>
             </div> 
-
-         
 
             {/* Фиксированная шапка меню */}
             <div id="menu" className="fixed z-40 top-0  py-[5px] md:py-[10px]  w-full bg-[#FFFFFF] text-black">
@@ -117,8 +112,7 @@ export default function Header(){
             </section>
             
             {/* Заглушка с отступом для секции с видео */}
-            <div style={{height:'100vh'}} className={`relative z-30 min-h-screen h-screen`}>
-            </div>
+            <div style={{height:'100vh'}} className={`relative z-30 min-h-screen h-screen`}></div>
         </>
     )
 }
