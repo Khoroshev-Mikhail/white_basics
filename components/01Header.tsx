@@ -10,52 +10,11 @@ import main_mobile from "../public/img/01Header/main_mobile.MP4"
 
 
 export default function Header(){
-    const [showButton, setShowButton] = useState<boolean>(false);
-    const [scrollPosition, setScrollPosition] = useState(0);
     const [activeSection, setActiveSection] = useState<number | null>(null);
     const [isHidden, setIsHidden] = useState(true);
-    const [height, setHeight] = useState<number>()
     const [isMobile, setIsMobile] = useState<boolean>(false)
 
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         if(window.innerWidth <= 767){
-    //             setIsMobile(true)
-    //         } else{
-    //             setIsMobile(false)
-    //         }
-    //     };
-    //     window.addEventListener('resize', handleResize);
-    //     return () => {
-    //       window.removeEventListener('resize', handleResize);
-    //     };
-    //   }, []); 
-
-    useEffect(() => {
-        const video = document.querySelector("video");
-        const handleVideoTimeUpdate = () => {
-            if(video){
-                const videoDuration = video.duration;
-                const currentTime = video.currentTime;
-                const timeUntilEnd = videoDuration - currentTime;
-                const threshold = 3; 
-                if (timeUntilEnd <= threshold) {
-                    setShowButton(true);
-                }
-            }
-        };
-
-        if (video) {
-            video.addEventListener("timeupdate", handleVideoTimeUpdate);
-            return () => {
-                video.removeEventListener("timeupdate", handleVideoTimeUpdate);
-            };
-        }
-    }, []);
-
-
     useLayoutEffect(()=>{
-        setHeight(document.getElementById('Header')?.offsetHeight)
         const isMobile = window.matchMedia("(max-width: 767px)").matches;
         setIsMobile(isMobile)
     }, [])
@@ -70,7 +29,6 @@ export default function Header(){
                     setActiveSection(index);
                 }
             });
-            setScrollPosition(window.scrollY)
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
