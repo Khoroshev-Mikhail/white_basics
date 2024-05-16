@@ -97,10 +97,16 @@ export default function Header(){
                     </div>
                 
                     <div className={`relative z-20 w-full md:w-[2/3] h-full px-2 overflow-hidden flex flex-col justify-center rounded-[10px]`}>
-                        <video autoPlay muted playsInline className="block object-cover w-full md:w-2/3 md:mx-auto md:h-full  max-w-full rounded-[10px]" >
+                        {/* <video autoPlay muted playsInline className="block object-cover w-full md:w-2/3 md:mx-auto md:h-full  max-w-full rounded-[10px]" >
                             <source src={main} type="video/mp4" media="(min-width: 768px)"/>
                             <source src={main_mobile} type="video/mp4"  media="(max-width: 767px)"/>
                             <source src={isMobile ? main_mobile : main} type="video/mp4"/>
+                        </video> */}
+                        <video autoPlay muted playsInline className="block md:hidden object-cover w-full md:w-2/3 md:mx-auto md:h-full  max-w-full rounded-[10px]" >
+                            <source src={main_mobile} type="video/mp4" />
+                        </video>
+                        <video autoPlay muted playsInline className="hidden md:block object-cover w-full md:w-2/3 md:mx-auto md:h-full  max-w-full rounded-[10px]" >
+                            <source src={main} type="video/mp4" />
                         </video>
                     </div>
                     {/* {showButton &&
